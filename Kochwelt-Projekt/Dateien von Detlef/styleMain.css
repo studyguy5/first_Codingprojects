@@ -1,0 +1,25 @@
+@font-face {
+    src: url(fonts/Raleway-Regular.ttf);
+    font-family: "raleway";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: raleway, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.limitation {
+    max-width: 1440px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 32px !important;
+}

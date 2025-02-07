@@ -1,0 +1,40 @@
+.recommendation {
+    display: flex;
+    justify-content: center;
+    padding: 90px 120px;
+}
+
+.recommendation img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.recom_content_button {
+    margin-top: 70px;
+}
+
+.recom_content {
+    padding-left: 30px;
+}
+
+button {
+    height: 38px;
+    width: 180px;
+    background-color: rgb(0, 128, 0);
+    color: white;
+    border-width: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 180, 0);
+}
+
+.impressum_padding {
+    padding: 0 120px;
+}

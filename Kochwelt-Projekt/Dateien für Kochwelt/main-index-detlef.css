@@ -1,0 +1,79 @@
+.section-main-index {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.reciept-of-the-day {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.reciept-of-the-day img{
+    width: 300px;
+    border-radius: 5%;
+}
+
+.reciept-of-the-day-right a {
+    text-decoration: none;
+    color: white;
+    background-color:#008000;
+    padding: 8px 16px; 
+}
+
+.space-div {
+    height: 48px;
+}
+
+.something-new {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+} 
+
+.reciepts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+.reciept {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reciept img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    object-fit: cover ;
+    margin-bottom: 4px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.info-content{
+    display: flex;
+    flex-direction: row;
+    gap: 140px;
+}
+
+.info img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}

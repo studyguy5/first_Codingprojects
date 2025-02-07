@@ -1,0 +1,157 @@
+<html>
+<head>
+<title> Mein Restaurant</title>
+<style>
+html {scroll-behavior: smooth;}
+.headerimage {height: 700px; width:100%; object-fit: cover; padding-left: 75px;}
+.body {
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;font-size: 12px;
+
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-style: normal; font-size: 35px;
+}}
+.main-container {background-color: rgb(0,30,105,0.4); position: absolute; top:9px; left:83px; right:75px; height:700px; width: 100%;object-fit:cover; color: white; display:flex; justify-content: center;align-items: center; flex-direction: column;}
+.table-container {padding-left: 75px;
+	padding-right:75px; padding-bottom: 30px;}
+.map{width: 100%;}
+.map1{padding-left:72px; width: 100%; padding-bottom:30px;}
+.rest {padding-left: 75px; padding-bottom: 30px;}
+.maincontainer-footer {background-color: black; display: flex; align-items: center; justify-content: space-between; padding-right: 100px;}
+.footer {padding: 100px; color: white;}
+.footer-link {color: white; text-decoration: none;}
+.contlink {color: white;}
+.footer-link:hover {color: green; text-decoration: underline;}
+.Kontakt {padding-left: 75px; padding-bottom:30px;}
+
+.menu {position: absolute; top:32px; right: 150px;}
+.menu a {color: yellow; text-decoration: none; padding-right: 10px; font-weight: bold; font-size: 15px;}
+.menu a:hover {color: white; text-decoration: underline;}
+.order {background-color: orange; padding: 5px; color: black !important;font-family: serif;}
+.order:hover{background-color:#75ad17;} 
+a{color: pink;}
+a:hover{color: red;text-decoration: none;}
+
+#headline {color: yellow;}
+
+
+
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Lugrasimo&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Lugrasimo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body class= "body">
+<img class="headerimage" src="./image/woman.png">
+
+<div class="main-container">
+<h1 class="pacifico-regular" id="headline"> Herzlich Willkommen</h1>
+Hier findest du einen Überblick über unsere Speisen <br>
+</div>
+
+<div class="menu">
+<a  href="#contact">Reservierung</a>
+<a  class="order" href="#">BESTELLE ONLINE</a>
+<a  href="#contact">Kontakt</a>
+<a  href="#route">Anfahrt</a>
+</div>
+<br>
+<br>
+<div class="table-container">
+<h2 class="pacifico-regular" id="opentime">Unsere Öffnungszeiten</h2>
+
+ <table>
+  	<tr>
+		<td>Mo-Di </td>
+		<td> von </td>
+		<td> 0 bis 22 Uhr</td>
+	</tr>
+
+	<tr>
+		<td>Mi</td>
+		<td> von </td>
+		<td> 0 bis 20 Uhr</td>
+	</tr>
+	<tr>
+		<td>Sa-So </td>
+		<td>von </td>
+		<td>0 bis 24 Uhr</td>
+	</tr>
+</table> 
+</div>
+
+<div class="map1">
+<h2 class="pacifico-regular" id="route">Anfahrt:<h2>
+
+
+
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21667.69761035749!2d11.379079611290118!3d47.246664596466616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d69637dfeaae9%3A0xa6c9a903ab3103c1!2sBergisel!5e0!3m2!1sde!2sat!4v1714072850791!5m2!1sde!2sat"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+<div class="rest">
+<table>
+	<tr>
+
+		<td>
+<h2 class="pacifico-regular">Speißekarte<h2>
+		</td>
+
+ <table>
+  <tr>
+    	<th>Gericht</th>
+    	<th>Preis</th>
+    	<th>Allergene</th>
+  </tr>
+  <tr>
+    	<td>Pizza</td>
+    	<td>12,99€</td>
+    	<td>B</td>
+  </tr>
+  <tr>
+    	<td>Pasta</td>
+    	<td>10,50€</td>
+   	 <td>AC</td>
+  </tr>
+<tr>
+    	<td>Kepab</td>
+    	<td>5,99€</td>
+   	 <td>BC</td>
+  </tr>
+</table> 
+
+
+Speißekarte gerne <a href="./speißekarte/speißekarte.odt"> herunterladen</a>
+</div>
+
+<div class="Kontakt" id="contact">
+<h2 class="pacifico-regular"> Kontaktieren Sie uns jeder Zeit</h2>
+
+Telefonnummer: <a href="tel:06645489215">06645489215</a> <br>
+Email: <a href="mailto:beispiel@hotmail.com">beispiel@hotmail.com</a> <br>
+</div>
+<br>
+<div class= "maincontainer-footer">
+	<div class="footer">
+(c) Copyright 2024 Developer Akademie GmbH <br>
+	</div>
+	<div class="contlink">
+<a  href="./impressum.html" class="footer-link">Impressum</a> | <a  href="./datenschutz.html" class="footer-link">Datenschutzerklärung</a>
+	</div>
+</div>
+
+</body>
+

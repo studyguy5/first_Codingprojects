@@ -1,0 +1,193 @@
+@media(max-width: 1000px) {
+    .recommendation {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .recommendation img {
+        margin-bottom: 30px;
+    }
+
+    .recom_content_button {
+        margin-top: 30px;
+    }
+
+    .recom_content {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
+
+@media(max-width: 950px) {
+    .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .container img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .links_header {
+        display: none;
+    }
+
+    .header button {
+        display: block;
+    }
+
+    .header {
+        align-items: flex-end;
+    }
+
+    .recommendation {
+        padding-top: 45px;
+    }
+
+    .containerpfanne {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .recipe_description {
+        margin-top: 40px;
+    }
+
+    .contact-form-container {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 800px) {
+    .container2 {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 700px) {
+    .recommendation img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .container img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .containerpfanne {
+        padding-left: 60px;
+        padding-right: 60px;
+        text-align: center;
+    }
+
+    .recommendation {
+        padding: 45px 60px;
+    }
+
+    .header {
+        padding: 0 60px;
+    }
+
+    .footer {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media(max-width: 650px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        padding-right: 35px;
+    }
+
+    .Kochwelt-Footer-Icon {
+        margin-bottom: 20px;
+    }
+
+    .impressum_padding {
+        padding: 0 40px !important;
+    }
+}
+
+@media(max-width: 580px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: 135px;
+    }
+
+    .header button {
+        margin-right: 20px;
+    }
+
+    .recommendation img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .menu_container {
+        align-items: center;
+        padding: 0;
+    }
+
+    .logo_header {
+        padding-left: 20px;
+    }
+
+    .contact-form-container {
+        width: 300px;
+    }
+}
+
+@media(max-width: 410px) {
+    .contact-form-container {
+        width: 200px;
+    }
+
+    .lawn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .img-wok {
+        width: 150px;
+        height: 150px;
+    }
+
+    .recommendation {
+        padding: 45px 20px;
+    }
+}
+
+@media(min-width: 950px) {
+    .resp_menu_box {
+        display: none;
+    }
+
+    .menu_container button {
+        display: none;
+    }
+}

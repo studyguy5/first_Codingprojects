@@ -1,0 +1,91 @@
+@font-face {
+    src: url(fonts/Raleway-Regular.ttf);
+    font-family: "raleway";
+}
+
+body {
+    font-family: "raleway", sans-serif;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.background_header {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header button {
+    display: none;
+}
+
+.logo_header {
+    padding: 20px 0;
+}
+
+.logo_header img {
+    height: 60px;
+}
+
+.links_header {
+    display: flex;
+    align-items: end;
+    gap: 25px;
+}
+
+.links_header a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+.links_header a:hover {
+    color: rgb(0, 128, 0);
+}
+
+.current_site {
+    box-shadow: 0 5px rgb(0, 128, 0);
+    margin-bottom: 0;
+    color: rgb(0, 128, 0) !important;
+}
+
+.resp_menu_box {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    width: 180px;
+    height: 155px;
+    text-align: center;
+}
+
+.resp_menu_box a {
+    text-decoration: none;
+    color: rgb(0, 128, 0);
+    margin-top: 15px;
+}
+
+.resp_menu_toggle {
+    display: flex;
+}
+
+.make_space_menu {
+    height: 155px;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+    position: relative;
+    top: -37px;
+    flex-direction: column;
+    align-items: flex-end;
+}

@@ -1,0 +1,181 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
+
+
+body {
+    
+    padding: 0;
+    font-family: "Raleway",sans-serif; 
+    font-size: 16px;
+    min-height: 100vh; 
+    max-width:100%; 
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex: 1;
+    min-height: calc(100vh - 333px);
+}
+
+
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:25px 0px;
+    width:80%;
+    max-width:480px;
+    margin: 0 auto;
+   
+}
+
+main ul{
+    align-items:center;
+    margin-top:20px;
+}
+
+.contact_overlay{
+    display:flex;
+    justify-content: center;
+    max-width:100%;
+    width:100%;
+    flex: 1;
+    min-height: calc(100vh - 546px);
+}
+
+
+.contact_div {
+
+    height: 580px;
+    width: 100%;
+    background-color: #e0dede;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:127px;
+    padding-top: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    
+    max-width:500px;
+    
+    
+    
+
+}
+
+.contact_div h3 {
+    margin-left: 30px;
+}
+
+.namefield {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+#name {
+    border-radius: 4px;
+    border-width: 0px;
+    padding: 7px;
+
+}
+
+.emailfield {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#email {
+    border-radius: 4px;
+    border-width: 0px;
+    padding: 7px;
+}
+
+.messagefield {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+
+}
+
+#message {
+    
+    border-radius: 4px;
+    border-width: 0px;
+    height:260px;
+    resize:none;
+    overflow:auto;
+}
+
+
+
+
+
+.sendbutton {
+    
+
+    display:flex;
+    justify-content:center;
+    margin-top: 18px;
+    max-width:530px;
+    width:100%;
+    
+
+}
+
+#sendbutton {
+    background-color: green;
+    color: white;
+    width: 140px;
+    height: 28px;
+    border-radius: 7px;
+    border-width: 0px;
+    
+
+}
+
+
+
+@media(max-width:600px){
+    .contact_overlay{
+        width:95%;
+        margin: 0 auto;
+    } 
+    
+}
+
+@media(max-width:460px){
+    .contact_overlay{
+        width:95%;
+        margin: 0 auto;
+        
+    }
+}

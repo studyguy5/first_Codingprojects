@@ -1,0 +1,87 @@
+.img-width {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.lawn {
+    background-color: rgb(239, 239, 239);
+}
+
+.überschrift {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 120px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.spaghetti {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.arrabiata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.pesto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.h3-spaghetti {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.h3-arrabiata {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.h3-pesto {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.align_spaghetti {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.align_pesto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}

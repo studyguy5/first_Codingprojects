@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color:white;
+}
+
+.showNote{
+    width:300px;
+    height:150px;
+    background-color:lightcoral;
+    color:rgb(0, 0, 0);
+}

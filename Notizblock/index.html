@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+
+    <script src="./script.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+</head>
+<body onload="init()">
+    
+    <div class="headlines">
+        <h3>Titel:</h3>
+        <h3>Notiz:</h3>
+    </div>
+
+
+    <input id="titleinput" placeholder="title" type="text">
+    <input id="textinput" placeholder="new Note">
+    
+    <div class="divforbuttons">
+        <button onclick="saveData()" id="SaveNote"><b>Save Note</b></button>
+        <button onclick="clearStorage()" id="clearStorage"><b>Clear Storage</b></button>
+        <button onclick="deleteAll()" id="deleteAll"><b>delete All</b></button>
+    </div>
+    
+    <h2>saved Notes</h2>
+    <hr></hr>
+    <div id="notesdiv" class="notediv">
+        <button>delete</button>
+    </div>
+    
+    <h2>archived Notes</h2>
+    <hr></hr>
+    <div id="trashNote" class="trashDiv" >
+
+    </div>
+</body>
+</html>

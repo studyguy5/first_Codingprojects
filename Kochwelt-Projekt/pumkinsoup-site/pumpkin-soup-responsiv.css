@@ -1,0 +1,166 @@
+@media(max-width: 992px) {
+    .headlineimg{
+        width:98%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 768px) {
+    .headlineimg{
+        width:96%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 576px) {
+    .headlineimg{
+        width:96%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 456px) {
+    .headlineimg{
+        width:95%;
+    }
+    input{
+        width:fit-content;
+    }
+
+    
+}
+
+@media(max-width: 375px) {
+    .headlineimg{
+        width:95%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .preparation-info {
+        
+        flex-direction: column;
+        width: 95%;
+        
+        gap: 8px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 25px 0px;
+    }
+
+    input {
+        border: solid rgb(240, 240, 240) 1px; 
+        border-radius: 8px;
+        padding: 8px 16px;
+        width: 180px;
+        text-align: center;
+    }
+
+    .preparation-info-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 320px){
+
+    body{
+        display:inline;
+    }
+
+    .headlineimg{
+        width:95%;
+    }
+
+    .preparation-info {
+        flex-direction: column;
+        width: 95%;
+    }
+    
+
+    .preparation {
+        align-items: center;
+    }
+
+    .preparation-bottom-info {
+        flex-direction: column;
+    }
+
+    .span-div-blank {
+        height: 25px;
+        margin: 0;
+    }
+    
+    .pumpkin-content {
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 16px;
+        margin-bottom: 16px;
+        
+    }
+
+    
+
+    .preparation-info-box img {
+        height: 16px;
+        width: auto;
+    }
+    
+    button {
+        border: none;
+        padding: 8px 16px;
+        margin-left: 0;
+    }
+
+    .reciepe-creator {
+        width: 100%;
+    }
+
+    .reciepe-creator-content {
+        padding-left: 8px;
+    }
+
+    .reciepe-creator-content img {
+        height: 80px;
+    }
+
+    .my-name {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        width: 100%;
+        text-align: left;
+
+    }
+}

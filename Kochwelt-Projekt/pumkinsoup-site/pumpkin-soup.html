@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kochwelt - Pumpkin-Soup</title>
+        <link rel="icon" href="/Kochwelt-Projekt/assets/images/icons/favicon.svg">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/recipe-of-the-day/recipe-of-the-day.css">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/burger-menu.css">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/burger-menue-responsiv.css">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/index.html">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/main.css">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/main-responsiv.css">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/pumkinsoup-site/pumpkin-soup.css">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/pumkinsoup-site/pumpkin-soup-responsiv.css">
+        <script src="/Kochwelt-Projekt/scripts/nav-link.js" defer></script>
+        <script src="/Kochwelt-Projekt/scripts/burger-menu.js" defer></script>
+        <script src="/Kochwelt-Projekt/pumkinsoup-site/pumkin-soup.js" defer></script>
+    
+    </head>
+    <body>
+
+        <div class="header2">
+            <header>
+            <a href="/Kochwelt-Projekt/startsite/index.html"><img src="/Kochwelt-Projekt/assets/images/logo.png" alt="Logo" class="kochwelt-logo"></a>
+            <nav id="header-nav" class="header-nav">
+                <ul class="desktop-menu">
+                    <li><a href="/Kochwelt-Projekt/startsite/index.html" class="header-nav-link">Start</a></li>
+                    <li><a href="/Kochwelt-Projekt/recipe-of-the-day/recipe-of-the-day.html" class="header-nav-link">Rezept des Tages</a></li>
+                    <li><a href="/Kochwelt-Projekt/contact_site/contact.html" class="header-nav-link">Kontakt</a></li>
+                    <li><a href="/Kochwelt-Projekt/impressum-site/impressum.html" class="header-nav-link">Impressum</a></li>
+                </ul>
+                <div class="hamburger-icon" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <ul class="mobile-menu">
+                        <li><a href="./index.html" class="mobile-nav-link">Start</a></li>
+                        <li><a href="./recipe-of-the-day.html" class="mobile-nav-link">Rezept des Tages</a></li>
+                        <li><a href="./contact.html" class="mobile-nav-link">Kontakt</a></li>
+                        <li><a href="./impress.html" class="mobile-nav-link">Impressum</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+        </header>
+    </div>
+        
+    <main id="pumpkin-main" class="pumpkin-main">
+        
+        <div class="pumpkin-content">
+                <h1>
+                    Kürbis-Suppe    
+                </h1>
+                <img class="headlineimg" src="/Kochwelt-Projekt/assets/images/pumpkin-soup-1753613_1920.jpg" alt="Kürbis-Suppe">
+                <div id="preparation-info" class="preparation-info">
+                   <div class="preparation-info-box">
+                    <img src="/Kochwelt-Projekt/assets/images/icons/clock-regular.svg" alt="">
+                    30 -45 Min
+                    </div>
+                   <div class="preparation-info-box">
+                    <img src="/Kochwelt-Projekt/assets/images/icons/brain-solid.svg" alt="">
+                    einfach
+                    </div>
+                   <div class="preparation-info-box">
+                    <img src="/Kochwelt-Projekt/assets/images/icons/calendar-alt-regular.svg" alt="">
+                    02.11.2024
+                    </div>
+                </div>
+                <div class="span-div-line">
+                    &nbsp;
+                </div>
+                <form onsubmit="calculatePumpkinReciepe(); return false;" class="recieptForm">
+                    <label for="amount">Zutaten für &nbsp;</label>
+                    <input id="amount" type="number" value="4" min="1" max="10" required="">
+                    <button>Portionen</button>
+                </form>
+                <ul class="preparation-top-list">
+                    <li class="li-grey"><div id="Pumpkin">1</div><div>kg Kürbis (z.B. Hokkaido oder Butternut)</div></li>
+                    <li><div id="Onion">1</div><div>&nbsp;Zwiebel(n)</div></li>
+                    <li class="li-grey"><div id="Garlic-cloves">2</div><div>&nbsp;Knoblauchzehe(n)</div></li>
+                    <li><div id="Vegetable-bouillon">500</div><div>ml Gemüsebrühe</div></li>
+                    <li class="li-grey"><div id="Coconut-milk">200</div><div>ml Kokosmilch (optional für eine cremigere Konsistenz)</div></li>
+                    <li><div id="Olive-oil">2</div><div>&nbsp;EL Olivenöl</div></li>
+                    <li class="li-grey"><div></div><div>Salz und Pfeffer nach Geschmack</div></li>
+                    <li><div></div><div>Eine Prise Muskatnuss (optional)</div></li>
+                    <li class="li-grey"><div></div><div>Frische Kräuter (z.B. Petersilie oder Kürbiskerne) zur Dekoration</div></li>
+                </ul>
+                <div class="span-div-blank">
+                    &nbsp;
+                </div>
+                <div class="preparation">
+                <h2>Zubereitung</h2>
+                <div class="preparation-bottom-info">
+                    <div class="preparation-info-box">
+                     <img src="/Kochwelt-Projekt/assets/images/icons/clock-regular.svg" alt="">
+                     <span>ca. 30 Min</span>
+                     </div>
+                     <div class="preparation-info-box">
+                        <img src="/Kochwelt-Projekt/assets/images/icons/clock-regular.svg" alt="">
+                        <span>Gesamtzeit ca. 45 Min</span>
+                    </div>
+                 </div>
+                 
+                <ul class="preparation-bottom-list">
+                    <li>Vorbereitung des Kürbisses: Den Kürbis halbieren, entkernen und in Würfel schneiden. Bei Hokkaido kann die Schale dranbleiben, bei Butternut sollte sie entfernt werden.</li>
+                    <li>Zwiebel und Knoblauch anbraten: In einem großen Topf das Olivenöl erhitzen. Die Zwiebel und den Knoblauch fein hacken und im Öl glasig dünsten.</li>
+                    <li>Kürbis hinzufügen: Die Kürbiswürfel in den Topf geben und kurz mit anbraten.</li>
+                    <li>Brühe hinzufügen: Die Gemüsebrühe dazugeben und alles zum Kochen bringen. Dann die Hitze reduzieren und die Suppe etwa 20-25 Minuten köcheln lassen, bis der Kürbis weich ist.</li>
+                    <li>Pürieren: Mit einem Pürierstab die Suppe glatt pürieren. Wenn du eine cremigere Konsistenz möchtest, kannst du jetzt die Kokosmilch hinzufügen und gut vermischen.</li>
+                    <li>Würzen: Mit Salz, Pfeffer und Muskatnuss abschmecken.</li>
+                    <li>Servieren: Die Suppe in Schalen füllen und nach Belieben mit frischen Kräutern oder gerösteten Kürbiskernen garnieren.</li>
+                </ul>
+                <br>
+                <div>Guten Appetit !</div>
+            </div>
+                <div class="reciepe-creator">
+                    <h3>Rezept erstellt von</h3>
+                    <div class="reciepe-creator-content">
+                        <img src="/Kochwelt-Projekt/assets/images/profile.png" alt="Avatar">
+                        <div class="my-name">Detlef</div>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="intfooter">
+            <div>
+                <a href="index.html"><img src="/Kochwelt-Projekt/assets/images/logo.png" alt="Logo" class="kochwelt-logo kochwelt-logo-invert"></a>
+                </div>
+            <div class="footer-contet-right social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img class="facebook" src="/Kochwelt-Projekt/assets/images/icons/facebook_white.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="insta" src="/Kochwelt-Projekt/assets/images/icons/instagram_white.png" alt="Instagram"></a>
+                <a href="https://x.com/" target="_blank"><img class="twitter" src="/Kochwelt-Projekt/assets/images/icons/twitter_white.png" alt="Twittter"></a>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

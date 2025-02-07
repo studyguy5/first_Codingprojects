@@ -1,0 +1,185 @@
+.body{ background-color:black; font-family: 'PT-Sans', sans-serif;}
+
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pt-sans-bold-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .viga-regular {
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  
+  
+  .headcontainer{background-image:url(./img/header.png); height:100vh; background-size: cover;}
+  .header{display:flex; justify-content:space-between;}
+
+  .headcontainersubone{margin-top:30px; margin-left:30px;}
+  .headcontainersubtwo{margin-top:40px; display:flex;}
+
+  .logo-header{width:190px;height:150px; margin-top: 20px; margin-left: 50px;}
+
+
+
+  
+
+  .headcontainersubtwo a { color:white; margin-right:140px; text-decoration: none; font-family: 'pt-sans';}
+
+  
+
+  .headlogo{width:25px;}
+  .headlogo:hover{filter:drop-shadow(0px 0px 4px #dbdbdb); cursor: pointer;}
+  .facebook{height:20px;}
+  .facebook:hover{filter:drop-shadow(0px 0px 4px #f8f8f8); cursor: pointer;}
+  
+
+  a:hover{color:#B28851;}
+  
+
+  .headline{display:flex; justify-content:center; flex-direction: column; align-items:center; margin-top:320px;color:white}
+  h1{font-weight:bold;font-size:130px;display:flex; text-align:center;}
+  .h2main{font-weight:normal;font-size:50px;display:flex; text-align:center;}
+  .headline a {color:white;text-decoration: none; background-color:rgba(212, 187, 45, 0.973); padding:20px; border-radius:8px;}
+
+
+
+
+  .categories{display:flex; justify-content:space-around; height:600px; padding-top:80px; padding-bottom:80px; background-color:rgb(0, 0, 0); gap:24px;}
+  .news{display:flex; flex-direction:column;  aspect-ratio: auto; color:white; width:30%;}
+  .album{display:flex; flex-direction: column;  aspect-ratio: auto; color:white; width:30%;}
+  .store{display:flex; flex-direction: column;  aspect-ratio: auto; color:white; width:30%;}
+
+  .categories a {display:flex;  font-size:24px; color:#B28851;  text-decoration:none;}
+  
+  
+
+  
+  .statefestival{display:flex; height:600px; background-color:rgb(53, 49, 49);}
+  .statefestival img{ background-image:url(./img/p5.png); background-position: center; margin:30px;}
+  .text{white-space: nowrap; padding-left:50px; padding-top:25px; padding-right:50px; font-size:20px;color:white;flex:1;}
+  .button{ display:flex;justify-content: center;align-items: center;width:520px;}
+  .button a {font-size:35px; padding-left:65px;padding-right:65px;padding-top:10px;padding-bottom:10px;;background-color:rgb(150, 127, 0);border-radius: 6px;text-decoration: none;color:white;}
+  .hr{height:520px; display:flex;margin:25px;}
+  
+  
+  .follow{ height:400px; background-color:rgb(255, 255, 255);display:flex; justify-content:center;align-items:center;text-align:center;}
+  .followtext{color:rgb(207, 168, 38);font-family: "pt-sans-bold";font-size:45px;}
+
+  .bottomimgcontainer{background-image:url(./img/bottom.png); background-size: cover; background-position: center; height:600px;}
+  
+
+  .footer{height:300px;width:100%;background-color:rgb(0, 0, 0);display:flex;justify-content:space-around;align-items:center;}
+  .sub{color:white;font-size:30px;text-align:center; width:40%;}
+  .sociallink {width:55px;height:55px;border-radius: 15px;}
+  .linkcont{display:flex;margin-bottom:25px;justify-content:center;}
+  .linkcont a {margin-right:65px; display:flex;justify-content:space-evenly;}
+
+  
+  .submitbutton{background-color:#B28851;color:white; padding-left:50px;padding-right:50px;padding-top:10px;padding-bottom:10px; border-width:0px;}
+  input{padding-top:10px;padding-bottom:10px; border-width:0px; width:40%; background-color:#ddceb9;}
+  .submitcontainer{display:flex; justify-content:center; align-items:center;width:100%;}
+  input::placeholder{color:rgba(0,0,0,0.4); padding-left:25px;}
+  .footer-right{width:60%;}
+
+  @media(max-width:700px){
+    .categories{flex-direction: column; height:1500px;}
+    .news{height:600px;}
+    .album{height:600px;}
+    .store{height:600px;}
+    .categories img{height:469px; width:469px;padding-left:80px;}
+    .headcontainer{background-image: url(./img/header.png); background-size: cover; background-position: center;}
+      
+  }
+  
+  
+
+  
+  @media(max-width:1400px){
+    .navbox-hide{display: none;}
+
+    h1{font-size:80px;}
+
+    h2main{font-size:35px;}
+
+    .categories a{font-size:18px;display:flex; justify-content:center;margin-left:30px;}
+    
+
+    .logo-header{width:80px;height:70px; position:absolute; top:10px;left:60px;}
+
+    .headcontainersubtwo a { margin-right:70px;}
+
+    
+
+  }
+
+  @media(max-width:700px) {
+    .headcontainer{background-image: url(./img/header.png); background-size: cover; background-position: center;}
+    .statefestival{width:469px; display:block; height:1500px;}
+    .statefestival img{width:100%;margin:0px;}
+    .paragraph{width:380px; white-space:wrap;margin-bottom:0px;margin-top:0px;justify-content:center;}
+    .button{width:469px;display:flex; align-items: center; justify-content:center;height:300px;}
+    .hr{height:1px;margin-top:50px;margin-bottom:50px;display:none;}
+    
+    
+
+    
+
+  }
+
+  @media(max-width:700px){
+    .follow{width:469px;margin-left:80px;}
+    .followtext{font-size:35px;}
+    .bottomimgcontainer{width:469px;margin-left:80px;}
+    .footer{width:469px; flex-direction:column;margin-left:80px;}
+    .footer-right{width:100%;}
+    .sub{font-size:15px; width:100%;}
+    .sociallink{width:35px;height:35px;}
+    .linkcont a{margin-right:35px;}
+    .statefestival{margin-left:80px;}
+    
+    
+    }
+  
+    @media(max-width:700px){
+      .footer-right{width:100%;}
+      
+      .submitbutton{padding-left:25px;padding-right:25px;}
+      .text{padding-left: 50px; text-align:center;}
+      }
+      
+      
+      
+      
+      
+      
+
+    
+
+
+  
+
+
+
+

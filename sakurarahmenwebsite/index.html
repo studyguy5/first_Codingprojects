@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Ramen</title>
+    <link rel="icon" href="img/1_hero/PNG/sakura_logo.png">
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .raleway-regular {
+            font-family: "Raleway", sans-serif;
+            font-weight:bold;
+            font-style: normal;
+        }
+
+
+        .economica-bold {
+            font-family: "Economica", sans-serif;
+            font-weight: 700;
+            font-style: bold;
+            font-size: 56px;
+        }
+
+
+
+        .headsection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./img/1_hero/JPG/hero_bg.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            max-width: 100%;
+            
+            
+        }
+
+        .headcontainer {
+            
+            display: flex;
+            justify-content: space-between;
+            height: 100vh;
+            width: 100%;
+            max-width: 1440px;
+            /*Wert war: 1440px*/
+
+        }
+
+        .headline {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            width: 100%;
+            max-width: 1440px;
+            /*Wert war: 1440px*/
+            margin-bottom: 120px;
+
+        }
+
+        .fonth1 {
+            font-size: 96px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+
+        .fonth4 {
+            font-size: 24px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        .blume {
+            margin-top: 20px;
+
+            width: 64px;
+            height: 64px;
+        }
+
+        .menutable {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            height: 60px;
+
+        }
+
+         .menutable a {
+            color: rgb(204, 192, 192);
+            margin-right: 30px;
+
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .teleicon {
+            width: 25px;
+            height: 25px;
+            display: flex;
+
+
+
+        }
+
+        .teleicon_a {
+            display: flex;
+            padding-top: 12px;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom:10px;
+            background-color: red;
+            border: 3px solid white;
+            border-radius: 12px;
+
+        }
+
+        a:hover {
+
+            color: rgb(175, 104, 104);
+
+        }
+
+
+
+        .hto {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 120px;
+            margin-bottom: 64px;
+            
+            font-weight: bold;
+            color: #9F0908;
+            width: 100%;
+            max-width: 1440px;
+            /*Wert war: 1440px*/
+        }
+
+        .hto h2{font-size:80px;
+        margin-block:0px;}
+
+        .body {
+            
+            width:100%;
+            background-color:#ffffff;
+            margin:0px;
+            
+        }
+
+        .l-no-horizontal-scroll {overflow-x: hidden}
+
+
+
+
+        .htoimages {
+            width: 100%;
+            max-width: 1440px;
+            /*Wert war: 1440px*/
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+        
+        }
+
+        .htoimages h3{margin-bottom:120px;
+        margin-block:0px;}
+
+        .htoimages img {
+            width: 128px;
+            height: 128px;
+            margin-bottom: 16px;
+        }
+
+        .noodles {
+            margin-bottom: 120px;
+        }
+
+        .soup {
+            margin-bottom: 120px;
+        }
+
+        .egg {
+            margin-bottom: 120px,
+        }
+
+        .noodles {
+            text-align: center;
+        }
+
+        .soup {
+            text-align: center;
+        }
+
+        .egg {
+            text-align: center;
+        }
+
+        .ourmenusection {
+            background-image: url(./img/3_section_our_menu/JPG/section_our_menu_bg.jpg);
+            width: 100%;
+            max-width: 100%;
+            /*Wert war: 1440px*/
+            padding-top: 120px;
+        }
+
+        .ourmenu {
+            font-weight: bold;
+            font-size: 80px;
+            margin-bottom: 64px;
+            color: #9F0908;
+            display: flex;
+            justify-content: center;
+        }
+
+        .imgtonkotsu {
+            height: 352px;
+            width: 352px;
+            margin-right: 80px;
+        }
+
+
+
+
+
+        .firstmenu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .tableone {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+
+        }
+
+        .prices {
+            font-size: 32;
+            font-weight: bold;
+            color: rgb(71, 71, 71)
+        }
+
+        .second-column {
+            text-align-last: right;
+        }
+
+        .telecon {
+            display: flex;
+            height: 30px;
+            background-color: red;
+            justify-content: space-around;
+            align-items: center;
+            width: 130px;
+            border-radius: 5px;
+            border: 3px solid white;
+        }
+
+        .telecon:hover {
+            background-color: #812c2c
+        }
+
+        .secondmenu {
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+            /*Wert war: 1440px*/
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tabletwo {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+
+        .imgspicymiso {
+            width: 352px;
+            height: 352px;
+            margin-top: 56px;
+            margin-left: 80px;
+        }
+
+        .hspicy {
+            font-size: 56px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        .tablethree {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+
+        .imgshiorahmen {
+            width: 352px;
+            height: 352px;
+            margin-top: 56px;
+            margin-right: 80px;
+
+            margin-bottom: 120px;
+        }
+
+        .thirdmenu {
+            display: flex;
+            justify-content: center;
+        }
+
+        td {
+            padding-bottom: 8px;
+        }
+
+        .tonkotsu {
+            margin-bottom: 16px;
+        }
+
+        .shio {
+            margin-bottom: 16px;
+            padding-top: 90px;
+        }
+
+        .fiusatmainbox {
+            width: 100%;
+            max-width: 100%;
+            /*Wert war: 1440px*/
+            font-weight: bold;
+            color: #9F0908;
+            font-size: 80px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+            margin-top: 120px;
+
+        }
+
+        .fiusat {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+            /*Wert war: 1440px*/
+            margin-bottom: 64px;
+            font-size: 24px;
+        }
+
+        .mapm {
+            width: 20px;
+            height: 20px;
+        }
+
+        .map {
+            width: 100%;
+            max-width: 100%;
+            
+            height: 500px;
+        
+        }
+
+        .location{width:100%;
+            max-width:100%;
+            margin: 0 auto;}
+
+
+
+        .upfooter{width:100%;
+        max-width:100%;
+        background-color:#0A141E}
+
+        .footer {
+            height: 144px;
+            width: 100%;
+            max-width: 1440px;
+            
+            border: 2px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0A141E;
+            margin: 0 auto;
+            border:0px;
+        }
+
+        .sakura-b {
+            display: none;
+        }
+
+        .footer h3{display:none;}
+
+        .footer-facebook {
+            width: 45px;
+            height: 45px;
+        }
+
+        .footer-instagram {
+            width: 45px;
+            height: 45px;
+        }
+
+        .footer-tripadvisor {
+            width: 45px;
+            height: 45px;
+        }
+
+        .footerimgs {
+            width: 210px;
+            height: 60px;
+        }
+
+        .footer-right {
+            display: flex;
+            justify-content: space-around;
+            
+            width: 40%;
+        }
+
+        .location{display:flex; 
+            width:100%;}
+
+
+
+
+
+
+
+                                /*max-width hier für 950px*/
+
+        @media(max-width:950px) {
+            .hto h2 {
+                font-size: 75px;
+            }
+
+            .headline{width:100%;
+                max-width:950px;}
+
+        }
+
+
+                                /*max-width hier für 768px*/
+        @media(max-width:768px) {
+            .headcontainer {
+                width: 100%;
+                max-width: 768;
+            }
+
+            .headlink {
+                display: none;
+            }
+
+            .menutable a {
+                font-size: 20px;
+                margin-left: 400px;
+                margin-top: 40px;
+            }
+
+            .teleicon a {
+                padding-right: 40px;
+            }
+
+            .blume {
+                position: absolute;
+                top: 30px;
+                left: 50px;
+            }
+
+            .fonth1 {
+                font-size: 72px;
+            }
+
+            .headline {
+                width: 100vw;
+            }
+
+            .fonth4 {
+                font-size: 20px;
+            }
+
+
+            .hto {
+                width: 100%;
+                max-width: 768px;
+                margin-top: 96px;
+                margin-bottom: 48px;
+            }
+
+            .hto h2 {
+                font-size: 64px;
+                color: #9F0908
+            }
+
+            .htoimages {
+                width: 100%;
+                max-width: 768px;
+                justify-content: space-evenly;
+                padding-left: 0px;
+            }
+
+            /*im htoimages Container ist der Platz zwischen den Bildern nicht identisch*/
+            img {
+                width: 115px;
+                height: 115px;
+            }
+
+            .noodles h3 {
+                margin-top: 8px;
+            }
+
+            .soup h3 {
+                margin-top: 8px;
+                margin-bottom: 96px;
+            }
+
+            .egg h3 {
+                margin-top: 8px;
+                margin-bottom: 96px;
+            }
+
+
+            .ourmenusection {
+                width: 100%;
+                max-width: 768px;
+            }
+
+            .ourmenu {
+                margin-top: 96px;
+                margin-bottom: 48px;
+                font-size: 64px;
+            }
+
+            .imgtonkotsu {
+                margin-right: 24px;
+                width: 250px;
+                height: 250px;
+            }
+
+            .tableone h3 {
+                font-size: 32px;
+            }
+
+            .tableone {
+                justify-content: center;
+                margin-bottom: 25px;
+                width: 300px;
+                text-align-last: unset;
+            }
+
+            .firstmenu {
+                justify-content: center;
+            }
+
+            .firstmenu td {
+                font-size: 24px;
+            }
+
+            .prices {
+                color: #675E54
+            }
+
+            .secondmenu {
+                width: 100%;
+                max-width: 768px;
+                justify-content: center;
+            }
+
+            .tabletwo {
+                font-size: 24px;
+                width: 300px;
+                text-align-last: unset;
+            }
+
+            .imgspicymiso {
+                margin-top: 32px;
+                margin-left: 24px;
+                margin-right: 20px;
+                width: 250px;
+                height: 250px;
+            }
+
+            .hspicy {
+                font-size: 32px;
+            }
+
+
+            .thirdmenu {
+                width: 100%;
+                max-width: 768px;
+                justify-content: center;
+            }
+
+            .shio {
+                font-size: 32px;
+                padding-top: 60px;
+            }
+
+            .tablethree {
+                width: 300px;
+                margin-top: 50px;
+                text-align-last: unset;
+                font-size: 24px;
+            }
+
+            .imgshiorahmen {
+                margin-right: 24px;
+                padding-right: 0px;
+                margin-bottom: 96px;
+                width: 250px;
+                height: 250px;
+            }
+
+            .fiusatmainbox {
+                width: 100%;
+                max-width: 768px;
+                margin-top: 96px;
+            }
+
+            #about {
+                font-size: 64px;
+            }
+
+            .fiusat {
+                width: 100%;
+                max-width: 768px;
+                font-size: 20px;
+                font-weight: normal;
+            }
+
+            .location{width:100%;
+            max-width:768px;}
+
+            .map {
+                height: 500px;
+                width: 100%;
+                max-width: 768px;
+                margin-bottom: 0px;
+            }
+
+            .footer h3 {
+                display: none;
+            }
+
+            .footer {
+                width: 100%;
+                max-width: 768px;
+                height: 144px;
+                background-color: #0A141E;
+                display: flex;
+                justify-content: space-around;
+            }
+
+
+            .footerimgs {
+                width: 250px;
+                height: 80px;
+            }
+
+            .sakura-b {
+                display: none;
+            }
+
+            .footer-facebook {
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+            }
+
+            .footer-instagram {
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+            }
+
+            .footer-tripadvisor {
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+            }
+
+            .footer-right {
+                justify-content: flex-end;
+            }
+
+            .instagram-a {
+                order: 3;
+            }
+
+            .facebook-a {
+                order: 2;
+            }
+        }
+
+
+                                    /*max-width hier für 620px*/
+        @media(max-width:620px) {
+            .headcontainer {
+                width: 100%;
+                max-width: 620px;
+            }
+
+            .menutable {
+                margin-left: -200px;
+            }
+
+            .fonth1 {
+                font-size: 55px;
+            }
+
+            .fonth4 {
+                font-size: 15px;
+            }
+
+        }
+
+
+                                    /*max-width hier für 550px*/
+        @media(max-width:550px) {
+            .hto {
+                width: 100%;
+                max-width: 550px;
+            }
+
+            .hto h2 {
+                font-size: 45px;
+            }
+
+            .htoimages h3 {
+                font-size: 46px;
+            }
+
+            .htoimages img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .ourmenusection img {
+                width: 230px;
+                height: 230px;
+            }
+
+            .ourmenusection h3 {
+                font-size: 28px;
+            }
+
+            .ourmenusection td {
+                font-size: 20px;
+            }
+
+            .footerimgs {
+                display: none;
+            }
+
+            .sakura-b {
+                display: block;
+                height: 40px;
+                width: 40px;
+                margin-right: 100px;
+                margin-top: -10px;
+            }
+
+            .location{width:100%;
+            max-width:550px;}
+            .map{width:100%;
+            max-width:550px;}
+            
+
+        }
+
+
+                                        /*max-width hier für 450px*/
+        @media(max-width:450px) {
+        
+            .menutable{width:360px;}
+
+            .headline{width:100%;
+            max-width:450px;}
+        
+            .fonth1 {
+                font-size: 45px;
+            }
+
+            .hto h2 {
+                font-size: 45px;
+            }
+
+            .htoimages h3 {
+                font-size: 42px;
+                margin-bottom:0px;
+                
+            }
+
+            .htoimages img {
+                width: 80px;
+                height: 80px;
+                margin-bottom:0px;
+            }
+
+            .ourmenusection img {
+                width: 210px;
+                height: 210px;
+            }
+            .ourmenusection{padding-top:96px;}
+
+            .ourmenu{margin-top:0px;}
+
+            .ourmenusection h3 {
+                font-size: 22px;
+            }
+
+            .ourmenusection td {
+                font-size: 16px;
+            }
+            .imgshiorahmen{margin-top:32px;}
+
+            .tablethree{margin-top:20px;}
+
+            .location{width:100%;
+            max-width:450px;}
+            .map{width:100%;
+            max-width:450px;}
+        }
+
+
+
+
+
+
+                                        /*max-width hier für 375px*/
+        @media(max-width:375px) {
+
+            .headline h1{font-size:36px;}
+
+            .headlink {
+                display: none;
+            }
+
+            .menutable a {
+                font-size: 16px;
+                height: 30px;
+                margin-top:30px;
+            }
+
+            .menutable {
+                margin-left: -230px;
+                width:320px;
+            }
+
+            .teleicon a {
+                
+                display: flex;
+                padding-top: 15px;
+                padding-right: 5px;
+                padding-left: 5px;
+                padding-bottom: 10px;
+                background-color: red;
+                border: 3px solid white;
+                border-radius: 12px;
+            }
+
+            .teleicon {
+                width: 18px;
+                height: 18px;
+            }
+
+            .blume {
+                position: absolute;
+                top: 24px;
+                left: 20px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .fonth1 {
+                font-size: 43px;
+                margin: 0px;
+            }
+
+            .fonth4 {
+                font-size: 16px;
+            }
+
+            .hto {
+                display: flex;
+                width: 100%;
+                max-width: 375px;
+                margin-top: 72px;
+                margin-bottom: 48px;
+            }
+
+            .hto h2 {
+                font-size: 35px;
+                color: #9F0908;
+            }
+
+            .htoimages {
+                width: 100%;
+                max-width: 375px;
+                flex-direction: column;
+            }
+
+            .htoimages img {
+                width: 112px;
+                height: 112px;
+            }
+
+            .htoimages h3 {
+                font-size: 32px;
+                margin-bottom: 32px;
+            }
+
+            .noodles {
+                margin-bottom: 0px;
+            }
+
+            .soup {
+                margin-bottom: 0px;
+            }
+
+            .egg {
+                margin-bottom: 40px;
+            }
+
+            .ourmenusection {
+                width: 100%;
+                max-width: 375px;
+                padding-top:72px;
+                
+            }
+
+            .ourmenu {
+            
+                margin-bottom: 40px;
+                font-size: 40px;
+            }
+
+            .imgtonkotsu {
+                margin-right: 0px;
+                margin-bottom: 24px;
+            }
+
+
+            .tableone {
+                justify-content: center;
+                margin-bottom: 32px;
+                width: 300px;
+                text-align-last: unset;
+            }
+
+            .firstmenu {
+                width: 100%;
+                max-width: 375px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .second-column {
+                text-align-last: right;
+            }
+
+            .prices {
+                text-align-last: justify;
+                color: #675E54
+            }
+
+            .secondmenu {
+                width: 100%;
+                max-width: 375px;
+                flex-direction: column-reverse;
+            }
+
+            .tabletwo {
+                font-size: 24px;
+                width: 300px;
+            }
+
+            .imgspicymiso {
+                margin-bottom: 24px;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .hspicy {
+                font-size: 32px;
+                margin-top:0px;
+            }
+
+            .thirdmenu {
+                width: 100%;
+                max-width: 375px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .shio {
+                font-size: 32px;
+                margin-top:0px;
+            }
+
+            .tablethree {
+                width: 300px;
+                font-size: 24px;
+                margin-bottom: 72px;
+                margin-top: 22px;
+            }
+
+            .tablethree h3 {
+                padding-top: 0px;
+            }
+
+            .imgshiorahmen {
+                margin-bottom: 24px;
+                margin-right: 0px;
+            }
+
+            .fiusatmainbox {
+                width: 100%;
+                max-width: 375px;
+                margin-top: 72px;
+            }
+
+            #about {
+                font-size: 40px;
+            }
+
+            .fiusat {
+                width: 100%;
+                max-width: 375px;
+                font-size: 16px;
+                font-weight: normal;
+                margin-bottom: 40px;
+            }
+
+            .location {
+                height: 500px;
+            }
+
+            .map {
+                height: 500px;
+                width: 100%;
+                max-width: 375px;
+                margin-bottom: 0px;
+            }
+
+            .footer {
+                width: 100%;
+                max-width: 375px;
+                height: 86px;
+                background-color: #0A141E;
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+
+
+
+            .footer h3 {
+                display: none;
+            }
+
+            .footerimgs {
+                display: none;
+            }
+
+            .sakura-b {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                margin-right: 140px;
+                
+            }
+
+            .footer-facebook {
+                width: 32px;
+                height: 32px;
+                
+            }
+
+            .footer-instagram {
+                width: 32px;
+                height: 32px;
+                
+            }
+
+            .footer-tripadvisor {
+                width: 32px;
+                height: 32px;
+                
+            }
+
+
+
+
+
+        }
+                                        /*max-width hier für 340px*/
+        @media(max-width:340px) {
+            .fonth1 {
+                font-size: 38px;
+            }
+
+            .sakura-b{margin-top:20px;}
+
+            
+        }
+
+
+                                        /*max-width hier für 320px*/
+        @media(max-width:320px) {
+
+            .headlink {
+                display: none;
+            }
+
+            .menutable a {
+                font-size: 16px;
+                height: 30px;
+            }
+
+            .menutable {
+                left: 150px;
+                top: 19px;
+                width:100%;
+                max-width:320px;
+            }
+
+            .teleicon a {
+                margin-top: 0px;
+            }
+
+            .teleicon {
+                width: 18px;
+                height: 18px;
+            }
+
+            .blume {
+                position: absolute;
+                top: 24px;
+                left: 20px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .fonth1 {
+                font-size: 33px;
+                margin: 0px;
+            }
+
+            .fonth4 {
+                font-size: 13px;
+            }
+
+            .hto {
+                width: 100%;
+                max-width: 320px;
+                margin-top: 72px;
+                margin-bottom: 48px;
+            }
+
+            .hto h2 {
+                font-size: 30px;
+                color: #9F0908;
+            }
+
+            .htoimages {
+                width: 100%;
+                max-width: 320px;
+                flex-direction: column;
+            }
+
+            .htoimages img {
+                width: 105px;
+                height: 105px;
+            }
+
+            .htoimages h3 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .noodles {
+                margin-bottom: 0px;
+            }
+
+            .soup {
+                margin-bottom: 0px;
+            }
+
+            .egg {
+                margin-bottom: 62px;
+            }
+
+            .ourmenusection {
+                width: 100%;
+                max-width:320px;
+                padding-top: 50px;
+            }
+
+            .ourmenu {
+                margin-top: 72px;
+                margin-bottom: 40px;
+                font-size: 37px;
+            }
+
+            .imgtonkotsu {
+                margin-right: 0px;
+                margin-bottom: 24px;
+                width: 250px;
+                height: 250px;
+            }
+
+            .tableone {
+                justify-content: center;
+                margin-bottom: 28px;
+                width: 300px;
+            }
+
+            .firstmenu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .firstmenu td {
+                font-size: 20px;
+            }
+
+            .prices {
+                text-align-last: justify;
+                color: #675E54
+            }
+
+            .secondmenu {
+                width: 100%;
+                max-width:320px;
+                flex-direction: column-reverse;
+            }
+
+            .tabletwo {
+                font-size: 24px;
+                width: 300px;
+            }
+
+            .imgspicymiso {
+                margin-bottom: 24px;
+                margin-left: 0px;
+                margin-right: 0px;
+                width: 250px;
+                height: 250px;
+            }
+
+            .hspicy {
+                font-size: 28px;
+            }
+
+            .thirdmenu {
+
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .shio {
+                font-size: 28px;
+            }
+
+            .tablethree {
+                width: 300px;
+                font-size: 24px;
+            }
+
+            .tablethree h3 {
+                padding-top: 0px;
+            }
+
+            .imgshiorahmen {
+                margin-bottom: 24px;
+                margin-right: 0px;
+            }
+
+            .fiusatmainbox {
+                width: 100%;
+                max-width: 375px;
+                margin-top: 72px;
+            }
+
+            #about {
+                font-size: 30px;
+            }
+
+            .fiusat {
+                width: 100%;
+                max-width: 375px;
+                font-size: 13px;
+                font-weight: normal;
+                margin-bottom: 40px;
+            }
+
+            .location {
+                height: 500px;
+                width: 100%;
+                max-width: 375px;
+            }
+
+            .map {
+                width: 100%;
+                max-width: 375px;
+                margin-bottom: 0px;
+            }
+
+
+
+
+
+            .footer h3 {
+                display: none;
+            }
+
+            .footerimgs {
+                display: none;
+            }
+
+            .sakura-b {
+                display: flex;
+                align-items: center;
+                width: 35px;
+                height: 35px;
+                margin-right: 120px;
+                margin-bottom: 10px !important
+            }
+
+            .footer-facebook {
+                width: 28px;
+                height: 28px;
+                margin-right: 15px;
+                margin-top: 10px;
+            }
+
+            .footer-instagram {
+                width: 28px;
+                height: 28px;
+                margin-right: 15px;
+                margin-top: 10px;
+            }
+
+            .footer-tripadvisor {
+                width: 28px;
+                height: 28px;
+                margin-right: 15px;
+                margin-top: 10px;
+            }
+
+
+            .footer {
+                width: 100%;
+                max-width: 320px;
+                height: 86px;
+                background-color: #0A141E;
+                display: flex;
+                justify-content: space-around;
+            }
+
+
+
+        }
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+
+
+</head>
+
+<body class="body l-no-horizontal-scroll">
+
+    <div class="headsection">
+
+        <div class="headcontainer">
+            <img class="blume" src="img/1_hero/PNG/sakura_logo.png">
+
+            <div class="menutable">
+                <a class="raleway-regular headlink" href="#ourmenu">MENÜ</a>
+                <a class="raleway-regular headlink" href="#location">LOCATIONS</a>
+                <a class="raleway-regular headlink" href="#about">ABOUT</a>
+
+                <a class="teleicon_a" href="tel:05127895454"> <img class="teleicon" src="./img/1_hero/SVG/phone.svg">
+                    017654564534
+                </a>
+            </div>
+
+        </div>
+
+        <div class="headline">
+
+            <h1 class="raleway-regular fonth1">SAKURA RAMEN</h1>
+            <h4 class="raleway-regular fonth4">THE BEST RAMEN IN TOWN</h4>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="hto raleway-regular">
+        <h2> HOW TO ORDER </h2>
+    </div>
+
+    <div class="htoimages">
+
+        <div class="noodles">
+            <img src="./img/2_section_how_to_order/PNG/noodle.png">
+            <h3 class="economica-bold">Pick your<br> noodel</h3>
+        </div>
+
+        <div class="soup">
+            <img src="./img/2_section_how_to_order/PNG/broth.png">
+            <h3 class="economica-bold">Pick your<br> broth</h3>
+        </div>
+
+        <div class="egg">
+            <img src="./img/2_section_how_to_order/PNG/egg.png">
+            <h3 class="economica-bold">Add your<br> toppings</h3>
+        </div>
+
+
+    </div>
+
+
+    <div class="ourmenusection">
+
+        <div>
+            <h2 class="ourmenu raleway-regular" id="ourmenu">OUR MENU</h2>
+
+
+            <div class="firstmenu">
+                <img class="imgtonkotsu" src="./img/3_section_our_menu/Png/R1.png">
+
+                <div class="tableone">
+                    <h3 class="tonkotsu economica-bold">Tonkotsu Ramen</h3>
+
+                    <table class="prices">
+                        <tr>
+
+                            <td class=" raleway-regular">CHICKEN </td>
+                            <td class="second-column raleway-regular">11,95€</td>
+                        </tr>
+                        <tr>
+                            <td class=" raleway-regular">BEEF</td>
+                            <td class="second-column raleway-regular">12,95€</td>
+                        </tr>
+                        <tr>
+                            <td class=" raleway-regular">SHRIMP</td>
+                            <td class="second-column raleway-regular">13,95€</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="secondmenu">
+
+            <div class="tabletwo">
+                <h3 class="hspicy economica-bold">Spicy Miso Ramen</h3>
+
+                <table class="prices">
+                    <tr>
+                        <td class=" raleway-regular">CHICKEN </td>
+                        <td class="second-column raleway-regular">11,95€</td>
+                    </tr>
+                    <tr>
+                        <td class=" raleway-regular">BEEF</td>
+                        <td class="second-column raleway-regular">12,95€</td>
+                    </tr>
+                    <tr>
+                        <td class=" raleway-regular">SHRIMP</td>
+                        <td class="second-column raleway-regular">13,95€</td>
+                    </tr>
+                </table>
+            </div>
+            <img class="imgspicymiso" src="./img/3_section_our_menu/Png/R2.png">
+        </div>
+
+        <div class="thirdmenu">
+            <img class="imgshiorahmen" src="./img/3_section_our_menu/Png/R3.png">
+
+            <div class="tablethree">
+                <h3 class="shio economica-bold">Shio Ramen</h3>
+
+                <table class="prices">
+                    <tr>
+
+                        <td class=" raleway-regular">CHICKEN</td>
+                        <td class="second-column raleway-regular">11,95€</td>
+                    </tr>
+                    <tr>
+                        <td class=" raleway-regular">BEEF</td>
+                        <td class="second-column raleway-regular">12,95€</td>
+                    </tr>
+                    <tr>
+                        <td class=" raleway-regular">SHRIMP</td>
+                        <td class="second-column raleway-regular">13,95€</td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+    </div>
+
+    <div class="lastbox">
+        <h2 class="fiusatmainbox raleway-regular" id="about">FIND US AT</h2>
+
+        <div class="raleway-regular fiusat">
+            <img class="mapm" src="./img/4_section_find_us_at/PNG/map_marker.png">
+
+            Kapuzinerstraße 31, München 80337
+        </div>
+
+    </div>
+
+    <div class="location" id="location">
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.208153263852!2d11.558623013295659!3d48.12550907112218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen%2C%20Deutschland!5e0!3m2!1sde!2sat!4v1715423469940!5m2!1sde!2sat"
+            style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+
+    <div class="upfooter">
+        <div class="footer">
+
+                <h3>Follow us on:</h3>
+
+                <a class="sakura-a" href="https://google.com"><img class="footerimgs"
+                src="./img/5_section_footer/SVG/sakura_ramen_logo_and_text.svg"></a>
+                <a href="https://google.com"><img class="sakura-b" src="./img/1_hero/PNG/sakura_logo.png"></a>
+
+            <div class="footer-right">
+                <a class="facebook-a" href="https://facebook.com"><img class="footer-facebook"
+                    src="./img/5_section_footer/SVG/facebook_logo.svg"></a>
+                <a class="instagram-a" href="https://instagram.com"><img class="footer-instagram"
+                    src="./img/5_section_footer/SVG/instagram_logo.svg"></a>
+                <a class="tripadvisor-a" href="https://tripadvisor.com"><img class="footer-tripadvisor"
+                    src="./img/5_section_footer/PNG/tripadvisor_logo.png"></a>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kochwelt - Kontaktseite</title>
+        <link rel="icon" href="/Kochwelt-Projekt/assets/images/icons/favicon.svg">
+        <link rel="html" href="/Kochwelt-Projekt/contact_site/send_mail.html">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/burger-menu.css">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/burger-menue-responsiv.css">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/main.css">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/main-responsiv.css">
+        <link rel="stylesheet" href="/Kochwelt-Projekt/contact_site/contact.css">
+        <script src="/Kochwelt-Projekt/contact_site/formspree.js"></script>
+        <script src="/Kochwelt-Projekt/scripts/nav-link.js" defer></script>
+        <script src="/Kochwelt-Projekt/scripts/burger-menu.js" defer></script>
+        
+    
+    </head>
+    <body>
+        
+    <div class="header2">
+        <header>
+                <a href="/Kochwelt-Projekt/startsite/index.html"><img src="/Kochwelt-Projekt/assets/images/logo.png" alt="Logo" class="kochwelt-logo"></a>
+            <nav id="header-nav" class="header-nav">
+                <ul class="desktop-menu">
+                    <li><a href="/Kochwelt-Projekt/startsite/index.html" class="header-nav-link">Start</a></li>
+                    <li><a href="/Kochwelt-Projekt/recipe-of-the-day/recipe-of-the-day.html" class="header-nav-link">Rezept des Tages</a></li>
+                    <li><a href="/Kochwelt-Projekt/contact_site/contact.html" class="header-nav-link">Kontakt</a></li>
+                    <li><a href="/Kochwelt-Projekt/impressum-site/impressum.html" class="header-nav-link">Impressum</a></li>
+                </ul>
+                <div class="hamburger-icon" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <ul class="mobile-menu">
+                        <li><a href="/Kochwelt-Projekt/startsite/index.html" class="mobile-nav-link">Start</a></li>
+                        <li><a href="/Kochwelt-Projekt/recipe-of-the-day/recipe-of-the-day.html" class="mobile-nav-link">Rezept des Tages</a></li>
+                        <li><a href="/Kochwelt-Projekt/contact_site/contact.html" class="mobile-nav-link">Kontakt</a></li>
+                        <li><a href="/Kochwelt-Projekt/impressum-site/impressum.html" class="mobile-nav-link">Impressum</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+        </header>
+    </div>
+        
+
+    <main>
+       <h1>Kontakt</h1>
+
+    <ul>
+        <li>das passende Rezept nicht gefunden?</li> 
+        <li>oder gibt es Fragen zu bestehenden Rezepten?</li> 
+        <li>stelle deine Fragen gerne per Mail und wir bemühen uns um dein Anliegen</li>
+    </ul>
+    </main>
+
+    <div class="contact_overlay">
+        
+        <form class="contact_div", onsubmit="sendMail(event)">
+
+        
+       
+
+        <div class="namefield">   
+            <label for="name">Dein Name:</label>
+            <input type="text" id="name" name="Dein Name" required>
+    
+        </div>
+
+        <div class="emailfield">   
+            <label for="email">Deine E-Mail:</label>
+            <input type="text" id="email" name="Deine E-Mail" required>
+    
+        </div>
+       
+        <div class="messagefield">   
+            <label for="Deine Message">Deine Nachricht:</label>
+            <textarea type="message" id="message" name="Message" required></textarea>
+    
+        </div>
+
+        <div class="sendbutton">   
+            <button type="submit" id="sendbutton">Abschicken</button>
+    
+        </div>
+
+    </form>
+</div>
+
+
+    
+
+    <footer class="footer">
+        <div class="intfooter">
+            <div>
+            <a href="/Kochwelt-Projekt/startsite/index.html"><img src="/Kochwelt-Projekt/assets/images/logo.png" alt="Logo" class="kochwelt-logo kochwelt-logo-invert"></a>
+            </div>
+            <div class="footer-contet-right social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img class="facebook" src="/Kochwelt-Projekt/assets/images/icons/facebook_white.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="insta" src="/Kochwelt-Projekt/assets/images/icons/instagram_white.png" alt="Instagram"></a>
+            <a href="https://x.com/" target="_blank"><img class="twitter" src="/Kochwelt-Projekt/assets/images/icons/twitter_white.png" alt="Twittter"></a>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* Einbinden der Schrift */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
+/*hab ich reinkopiert*/
+
+
+/* Browser reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*nicht kopiert*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*hatte ich schon reinkopiert*/
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    max-width: 1400px;
+    width: 1440px;
+}
+
+/*hab ich reinkopiert*/
+
+h3 {
+    margin-bottom: 16px;
+}
+
+.content-box {
+    padding: 0px 140px;
+}
+
+/*nicht kopiert*/
+
+
+/* Style für den Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    box-shadow: lightgrey 0px 5px 16px -5px;
+    width: 100%;
+}
+
+/* habe ich reinkopiert*/
+
+header a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+}
+
+/* habe ich nicht kopiert*/
+
+.kochwelt-logo {
+    width: 300px;
+}
+
+/* hab ich kopiert*/
+
+
+.header-nav {
+    display: flex;
+    width: fit-content;
+    text-align: right;
+    margin-bottom: 6px;
+}
+/*kopiert*/
+
+.header-nav-link {
+    margin-left: 16px;
+    margin-right: 8px;
+    text-decoration: none;
+    color: black;
+}
+/*kopiert*/
+.active-page,
+header a:hover {
+    text-decoration: underline;
+    color: #008000;
+    /*grün*/
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+}
+/*kopiert*/
+
+
+.section-main-index {
+    display: flex;
+    flex-direction: column;
+}
+/*nicht kopiert*/
+
+/* Macht das Kochwelt-Logo weiß */
+.footer-logo-invert {
+    filter: invert(100%);
+}
+/*kopiert*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*   
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+*/
+    background-color: #403b3b;
+}
+/*kopiert*/
+
+.social-media img {
+    margin: 0;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+}
+/*kopiert*/
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+/*kopiert*/

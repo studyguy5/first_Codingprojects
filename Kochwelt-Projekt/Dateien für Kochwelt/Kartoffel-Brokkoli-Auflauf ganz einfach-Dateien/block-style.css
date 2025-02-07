@@ -1,0 +1,25 @@
+.post-block.quote h3{
+    font-size: 54px;
+    margin-top: 70px;
+}
+
+.post-block.quote q:before,
+.post-block.quote q:after{
+	display: none;
+}
+
+.post-block.quote q{
+	font-size: 54px;
+	margin-top: 70px;
+	display: block;
+	line-height: 1.1;
+    margin-bottom: 20px;
+    font-family: 'DingDong' !important;
+    font-weight: 400 !important;
+}
+
+@media(max-width: 480px){
+	.post-block.quote q{
+		font-size: 34px;
+	}
+}

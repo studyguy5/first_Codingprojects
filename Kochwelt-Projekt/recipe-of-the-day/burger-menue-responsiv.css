@@ -1,0 +1,31 @@
+@media(max-width: 800px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
+  .open .bar1 {
+    translate: 0px 12px;
+    transform: rotate(45deg);
+  }
+
+  .open .bar3 {
+    translate: 0px -12px;
+  }
+}
+
+
+
+@media(max-width: 320px) {
+  .hamburger-icon {
+    width: 36px;
+    height: 36px;
+}
+
+}
+

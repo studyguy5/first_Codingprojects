@@ -1,0 +1,151 @@
+.pumpkin-main {
+    padding-top: 64px;
+    padding-bottom: 64px;
+   
+    max-width: 1440px;
+}
+
+.pumpkin-content {
+    margin-top: 32px;
+    width: 100%;
+    margin-bottom: 32px;
+    
+}
+
+.headlineimg {
+    width: 98%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    
+}
+
+.preparation{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    width:95%;
+}
+.preparation-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    width: fit-content;
+    padding-top: 32px;
+}
+
+.preparation-info-box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    background-color: rgb(240, 240, 240);
+    padding: 6px;
+}
+
+.preparation-info-box img {
+    height: 16px;
+    width: auto;
+}
+
+.preparation-bottom-info {
+    display: flex;
+    width: fit-content;
+    gap: 16px;
+}
+
+.preparation-bottom-list {
+    margin-top: 32px;
+}
+
+.preparation-bottom-list li {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    list-style: none;
+}
+
+.span-div-line {
+    border-bottom: solid 1px rgb(240, 240, 240);
+}
+
+.preparation-top-list {
+    padding: 0;
+    margin-top: 8px;
+    width:95%;
+}
+
+.preparation-top-list ul {
+    margin: 0;
+    margin-top: 7px;
+    padding: 0px;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+    padding-inline-start: unset;
+}
+
+.preparation-bottom-list {
+    padding: 0;
+}
+
+input {
+    border: solid rgb(240, 240, 240) 1px;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 8px 16px;
+    width: 180px;
+    text-align: center;
+}
+
+button {
+    border: solid 1px #008000;
+    color: white;
+    background-color: #008000;
+    padding: 8px 16px;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.li-grey {
+    background-color: rgb(240, 240, 240);
+}
+
+.preparation-top-list li {
+    display: flex;
+    list-style: none;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 50px 0px;
+}
+
+.reciepe-creator {
+ padding-bottom: 64px;
+}
+
+.reciepe-creator-content {
+    display: flex;
+    width: fit-content;
+    gap: 32px;
+    align-items: center;
+}
+
+.reciepe-creator-content img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.my-name {
+    height: fit-content;
+    font-size: 24px;
+}

@@ -1,0 +1,67 @@
+.impress-main {
+    margin-top: 32px;
+    align-items: center;
+    padding: 0 12px;
+}
+
+
+.impress{
+    width:100%;
+    max-width:1440px;
+    margin: 0 auto;
+}
+
+
+.impress h1 {
+    text-align: center;
+    max-width:1440px;
+    width:100%;
+}
+
+.impress-content, .privacy-content {
+    
+    padding: 32px;
+    margin: 32px 0px;
+    border-radius: 25px;
+    background-color: rgb(240, 240, 240);
+    max-width: 1440px;
+
+}
+
+.impress-content h1, .privacy-content h1 {
+    text-align: left;
+}
+.impress-content a, .privacy-content a, .credits a {
+    color: #008000; /*grün*/
+    text-decoration: underline;
+}
+
+.impress-content a:hover, .privacy-content a:hover, .credits a:hover {
+    color: #403b3b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.impress-content a:visited, .privacy-content a:visited, .credits a:visited {
+    color: #008000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.impress-content ul, .privacy-content ul {
+    margin: 8px;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    padding-inline-start: unset;
+}
+.impress-content li, .privacy-content li {
+    margin: 8px;
+}
+.credits {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 16px;
+    box-shadow: black 0px 5px 16px -5px;
+    border-radius: 15px;
+}

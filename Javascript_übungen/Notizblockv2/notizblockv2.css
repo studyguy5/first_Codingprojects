@@ -1,0 +1,59 @@
+body{
+ margin: 0;
+ padding: 0;   
+ background-color: lightblue;
+}
+
+h1{
+    font-family: Arial;
+    font-size: 24px;
+}
+
+#notizblock-pic{
+    width: 50px;
+}
+
+#header{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ padding-left: 20px;
+ padding-right: 20px;
+ width: 100%;
+ background-color: darkgrey;
+ border-bottom: solid 1px lightgrey;
+}
+
+.buttonDiv{
+    
+    width:100%;
+    height:50px;
+}
+
+#saveNote:hover{
+border:3px solid blue;
+}
+
+#clearStorage:hover{
+    border:3px solid blue;
+}
+
+#deleteAllNotes:hover{
+    border:3px solid blue;
+}
+
+.buttonDiv button{
+    margin-top:10px;
+    margin-left:20px;
+    height:30px;
+    width:110px;
+    border-radius: 5px;
+}
+
+#notizDiv{
+    background-color: white;
+    height: 100px;
+    padding: 10px;
+}
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt - Rezept des Tages</title>
+    <link rel="icon" href="/Kochwelt-Projekt/assets/images/icons/favicon.svg">
+    <link rel="stylesheet" href="/Kochwelt-Projekt/recipe-of-the-day/recipe-of-the-day.css">
+    <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/burger-menu.css">
+    <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/burger-menue-responsiv.css">
+    <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/main.css">
+    <link rel="stylesheet" href="/Kochwelt-Projekt/startsite/main-responsiv.css">
+    <script src="/Kochwelt-Projekt/scripts/nav-link.js" defer></script>
+    <script src="/Kochwelt-Projekt/scripts/burger-menu.js" defer></script>
+    <script src="/Kochwelt-Projekt/recipe-of-the-day/itemcalculator.js" defer></script>
+
+</head>
+<body>
+
+    <div class="header2">
+        <header>
+        <a href="/Kochwelt-Projekt/startsite/index.html"><img src="/Kochwelt-Projekt/assets/images/logo.png" alt="Logo" class="kochwelt-logo"></a>
+        <nav id="header-nav" class="header-nav">
+            <ul class="desktop-menu">
+                <li><a href="/Kochwelt-Projekt/startsite/index.html" class="header-nav-link">Start</a></li>
+                <li><a href="/Kochwelt-Projekt/recipe-of-the-day/recipe-of-the-day.html" class="header-nav-link">Rezept des Tages</a></li>
+                <li><a href="/Kochwelt-Projekt/contact_site/contact.html" class="header-nav-link">Kontakt</a></li>
+                <li><a href="/Kochwelt-Projekt/impressum-site/impressum.html" class="header-nav-link">Impressum</a></li>
+            </ul>
+            <div class="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/Kochwelt-Projekt/startsite/index.html" class="mobile-nav-link">Start</a></li>
+                    <li><a href="/Kochwelt-Projekt/recipe-of-the-day/recipe-of-the-day.html" class="mobile-nav-link">Rezept des Tages</a></li>
+                    <li><a href="/Kochwelt-Projekt/contact_site/contact.html" class="mobile-nav-link">Kontakt</a></li>
+                    <li><a href="/Kochwelt-Projekt/impressum-site/impressum.html" class="mobile-nav-link">Impressum</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+</div>
+    
+    <main class="headline_img_section">
+        <h1>Kartoffel-Brokkoli-Auflauf</h1>
+
+        <img class="mealimg" src="/Kochwelt-Projekt/Dateien für Kochwelt/img/KB-Auflauf.PNG">
+
+        <div class="zusatzinfo">
+            <button class="infofieldbutton"><img src="/Kochwelt-Projekt/assets/images/icons/brain-solid.svg"> Schwierigkeitsgrad - <strong>&nbsp;Mittel</strong></button>
+            <button class="infofieldbutton"><img src="/Kochwelt-Projekt/assets/images/icons/clock-regular.svg">Zubereitungszeit <strong>&nbsp;30 min</strong> </button>
+            <button class="infofieldbutton"><img src="/Kochwelt-Projekt/assets/images/icons/calendar-alt-regular.svg"> Backzeit<strong>&nbsp;20 min</strong> </button>
+            
+            <button class="infofieldbutton"><img src="/Kochwelt-Projekt/assets/images/icons/calendar-alt-regular.svg"> Gesamtzeit<strong>&nbsp;50 min</strong></button>
+            <!--<button class="infofieldbutton"><img src="/Kochwelt-Projekt/assets/images/icons/calendar-alt-regular.svg"> <date aria-current="date" id="date"></date></button>-->
+        </div>
+        <hr> 
+
+        <form onsubmit="calculateReciept(); return false" class="calculatesection">
+            <div  class="inputsection">
+            <label for="itemamount">Zutaten für: </label>
+            <input type="number" id="itemamount" value="1" min="1" max="10" required >
+
+            <label for= "button">
+            <button type="submit" id="button" name="Portionen">Portionen</button>
+            </div>
+        </form>
+
+
+
+        <table class="itemsection" id="itemsection">
+            
+
+            <tr>
+                <td ><span id="potato">150</span> g </td>
+                <td> festkochende Kartoffeln</td>
+            </tr>
+            <tr>
+                <td><span id="broccoli">0.5</span> Stk.</td>
+                <td>Köpfe Brokkoli</td>
+            </tr>
+            <tr>
+                <td><span id="onion">0.25</span>  Stk.</td>
+                <td>Zwiebel</td>
+            </tr>
+            <tr>
+                <td><span id="garlic_clove">0.25</span>  Stk.</td>
+                <td>Knoblauchzehe</td>
+            </tr>
+            <tr>
+                <td><span id="butter">0.75</span> EL</td>
+                <td> Butter</td>
+            </tr>
+            <tr>
+                <td><span id="flour">62.5</span>  EL</td>
+                <td> Mehl</td>
+            </tr>
+            <tr>
+                <td><span id="vegetable_broth">62.5</span>  ml</td>
+                <td> Gemüsebrühe</td>
+            </tr>
+            <tr>
+                <td><span id="cream">62.5</span>  g</td>
+                <td> Sahne zum Kochen</td>
+            </tr>
+            <tr>
+                <td id="saltandpepper">-~+</td>
+                <td>Salz und Pfeffer</td>
+            </tr>
+            <tr>
+                <td id="Muskat">-~+</td>
+                <td>Muskat</td>
+            </tr>
+            <tr>
+                <td><span id="grated_cheese">25</span>  g</td>
+                <td> geriebener Käse</td>
+            </tr>
+            <tr>
+                <td><span id="creativity">50</span>  g</td>
+                <td>Kreativität ;-)</td>
+            </tr>
+                
+
+        </table>
+    </div>
+
+        
+        
+
+
+    </main>
+    
+    
+    <div class="preparation_section">
+        <div class="headline">
+            <h2>Zubereitung</h2>
+            
+        </div>
+        <div class="zusatzinfo">
+            <button class="infofieldbutton"><img  src="/Kochwelt-Projekt/assets/images/icons/clock-regular.svg"> Zeit<strong>&nbsp;30 min</strong> </button>
+            <button class="infofieldbutton"><img  src="/Kochwelt-Projekt/assets/images/icons/clock-regular.svg"> Gesamtzeit<strong>&nbsp;50 min</strong> </button>
+        </div>
+        
+        <ol class="preparation_text">
+            <li>Kartoffeln schälen und in Würfel schneiden. Brokkoli in Röschen schneiden. Zwiebel und Knoblauch hacken.</li>
+            <li>Kartoffeln in einen Topf geben, mit kaltem Wasser auffüllen und salzen. Aufkochen und 10 Minuten vorkochen. Brokkoli zugeben und 5 Minuten mitkochen.</li>
+            <li>Backofen auf 180 Grad Ober- und Unterhitze vorheizen.</li>
+            <li>Butter in einer Pfanne erhitzen und Zwiebeln und Knoblauch dünsten. Mehl mit einem Schneebesen einrühren, bis eine goldgelbe Mehlschwitze entsteht. <br> Nach und nach Gemüsebrühe und Sahne einrühren und die Sauce unter Rühren andicken lassem. Mit Salz, Pfeffer und Muskat würzen.</li>
+            <li>Kartoffeln und Brokkoli in eine Auflaufform geben und mit der Sauce vermengen. Alles mit geriebenem Käse bestreuen und 20 – 30 Minuten im Ofen backen.</li>
+        </ol>
+           
+        <a  href="https://www.gaumenfreundin.de/kartoffel-brokkoli-auflauf/">Link zum Rezept</a>
+            
+        
+
+        <h3>Rezept erstellt von</h3>
+
+        <div class="profilpicture">
+            <img src="/Kochwelt-Projekt/Dateien für Kochwelt/img/Rezept_Foto2.jpg">
+            <h4>Leonhard</h4>
+        </div>
+
+    </div>
+    
+    <footer class="footer">
+        <div class="intfooter">
+            <div>
+                <a href="/Kochwelt-Projekt/startsite/index.html"><img src="/Kochwelt-Projekt/assets/images/logo.png" alt="Logo" class="kochwelt-logo kochwelt-logo-invert"></a>
+                </div>
+            <div class="footer-contet-right social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img class="facebook" src="/Kochwelt-Projekt/assets/images/icons/facebook_white.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="insta" src="/Kochwelt-Projekt/assets/images/icons/instagram_white.png" alt="Instagram"></a>
+                <a href="https://x.com/" target="_blank"><img class="twitter" src="/Kochwelt-Projekt/assets/images/icons/twitter_white.png" alt="Twittter"></a>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

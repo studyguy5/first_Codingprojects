@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    
+   
+}
+
+.header2{
+    box-shadow: lightgrey 0px 5px 16px -5px;
+    width:100%;
+    max-width:100%;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    width:100%;
+    max-width:1440px;
+    margin: 0 auto;
+}
+
+
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-end;
+    height: 130px;
+    margin-right:20px;
+    margin-top:15px;
+    margin-bottom:6px;
+}
+
+.header-nav-link {
+    text-decoration: none;
+    color:#403b3b;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+.mobile-nav-link {
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+
+.active-page {
+    text-decoration: underline;
+    color: #008000; /*grün*/
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+}
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    bottom: 0;
+    width: 100%;
+    max-width:100%;
+    background-color:#403b3b;
+    height: 150px;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    
+}
+.intfooter{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width:1440px; 
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-contet-right{
+    padding-right:20px;
+}
+
+.social-media {
+    display: flex;
+    gap: 32px;
+    
+}
+
+.facebook{
+    width:40px;
+}
+
+
+.facebook{
+    width:25px;
+    height:40px;
+    
+}
+
+.insta{
+    width: auto;
+    height: 40px;
+    
+}
+
+
+.twitter{
+    width: auto;
+    height: 40px;
+    
+}
+
+
+
+
+.desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    height: fit-content;
+    list-style: none;
+    margin-bottom:15px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-block-start: 10.72px;
+    margin-block-end: 10.72px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-block-start: 13.28px;
+    margin-block-end: 13.28px;
+}
+
+h3 {
+    font-size: 19px;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+}
+
+.kochwelt-logo {
+    width: 300px;
+    margin-left:30px;
+}
+
+.kochwelt-logo-invert {
+    filter: invert(100%);
+}
