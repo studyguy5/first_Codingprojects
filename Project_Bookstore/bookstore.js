@@ -82,9 +82,9 @@ let keys = Object.keys(books[0])
 
 function renderBook() {
   let bookone = document.getElementById('bookcontainer');
-  bookone.innerHTML="";
+  bookone.innerHTML = "";
   for (let bookIndex = 0; bookIndex < books.length; bookIndex++) {
-  bookone.innerHTML += `<div class="renderBookContainer"><h2>${books[bookIndex].name}<h2>
+    bookone.innerHTML += `<div class="renderBookContainer"><h2>${books[bookIndex].name}<h2>
   <div class="start-div">
     <div class="bookImage"><img src="./book-illustration.png"></div>
       <div class="book-metainformation">
@@ -142,7 +142,7 @@ function renderBook() {
             </div>
           </div>
         `;
-        renderComments(bookIndex);
+    renderComments(bookIndex);
   }
 }
 
@@ -151,51 +151,52 @@ function saveTheComment(bookIndex) {
 
   let newComment = document.getElementById(`inputField-${bookIndex}`);
   let newName = document.getElementById(`inputNameField-${bookIndex}`);
-  
-  
-  books[bookIndex].comments.push({ 'name': newName.value, 'comment': newComment.value });
-  
+
+
+  books[bookIndex].comments.push({ 'name': newName.value, 'comment': newComment.value });   //hier werden die Values beider Inputfelder gleichzeitig in das Array gepusht
+
   saveComment(books);
   renderComments(bookIndex)
 
   newName.value = "";
   newComment.value = "";
-  
-  
-  
-  
+
+
+
+
 
 };
 
-function renderComments(bookIndex){
+function renderComments(bookIndex) {
   let commentTable = document.getElementById(`comment-table-${bookIndex}`);
   let comments = books[bookIndex].comments;
   commentTable.innerHTML = "";
-  for(let commentIndex = 0; commentIndex < comments.length; commentIndex++){
-  commentTable.innerHTML +=`
-<table>
-    <tr>
-      <td>${comments[commentIndex].name}</td>
-      <td>${comments[commentIndex].comment}</td>
-    <tr>
-</table>`
+  for (let commentIndex = 0; commentIndex < comments.length; commentIndex++) {
+    commentTable.innerHTML += `
+    <table>
+      <tr>
+        <td>${comments[commentIndex].name}</td>
+        <td>${comments[commentIndex].comment}</td>
+      <tr>
+    </table>`
 
-;
-}}
+      ;
+  }
+}
 
-function likeBook(bookIndex){
+function likeBook(bookIndex) {
   sum = books[bookIndex].likes;           // Wert von books[bookIndex].likes wird in sum gespeichert - von rechts nach links gepackt!!!!
-  if(books[bookIndex].liked !== true){
+  if (books[bookIndex].liked !== true) {
     sum += 1;                             // += zur aktuellen Zahl 1 addieren (sum = 1 wäre eine Zuweisung von 1!!)
     books[bookIndex].liked = true;        // den status von false auf true setzen
-}else{
-  sum -= 1;                               // das gleiche hier mit -= von der aktuellen Zahl 1 subtrahieren
-  books[bookIndex].liked = false;
-}
+  } else {
+    sum -= 1;                               // das gleiche hier mit -= von der aktuellen Zahl 1 subtrahieren
+    books[bookIndex].liked = false;
+  }
   books[bookIndex].likes = sum;           //hier werden alle Änderungen in sum wieder nach links in das Array gepackt
-                                          //Zusatz: auch hier ob von sum nach books[bookIndex].likes
-renderBook();                             //zum schluss, das gebiet, indem etwas geändert wurde, aktualisieren mit renderBook()
-  
+  //Zusatz: auch hier ob von sum nach books[bookIndex].likes
+  renderBook();                             //zum schluss, das gebiet, indem etwas geändert wurde, aktualisieren mit renderBook()
+
 }
 
 
