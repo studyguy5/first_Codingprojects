@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(2, 31, 63);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    height: 150px;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(16, 31, 116);
+    border: 3px solid black;
+}
+
+.intern-header {
+    display: flex;
+
+    align-items: center;
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+    max-width: 1920px;
+
+}
+
+b {
+    font-size: 28px;
+    color: rgb(212, 97, 3);
+}
+
+.intern-header h2,
+h3 {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.intern-header img {
+    margin-left: 40px;
+    width: 80px;
+    height: 80px;
+}
+
+.main-section {
+    display: flex;
+    max-width: 1920px;
+}
+
+.content-container {
+    width: 96%;
+    max-width: 1920px;
+    display: flex;
+    /* parent element display:flex; und child element display:table; siehe bookcontainer*/
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.bookcontainer {
+    display: table;
+    /* tool um den Footer unten zu halten (display:inline-table; funktioniert auch*/
+    margin: 0 auto;
+    max-width: 700px;
+    width: 98%;
+    height: 1350px;
+
+}
+
+.renderBookContainer {
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border: 4px solid rgb(128, 119, 0);
+    border-radius: 25px;
+    background-color: rgb(31, 48, 78);
+}
+
+.footer {
+
+    height: 150px;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(16, 31, 116);
+    border: 3px solid black;
+}
+
+.intern-footer {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+    max-width: 1920px;
+
+}
+
+b {
+    font-size: 28px;
+    color: rgb(212, 97, 3);
+}
+
+.intern-footer h2,
+h3 {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.intern-footer img {
+    margin-left: 40px;
+    width: 80px;
+    height: 80px;
+}
