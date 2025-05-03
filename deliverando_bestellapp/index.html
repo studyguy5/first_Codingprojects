@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./shoppingCartDetails.css">
+    <link rel="stylesheet" href="./shoppingCartOverlay.css">
+    <script src="./productsource.js"></script>
+    <script src="./productdisplay.js"></script>
+    <script src="./storage.js"></script>
+    <script src="./calculate.js"></script>
+    <script src="responsiv-shoppingcart.js"></script>
+    <title>Bestell App</title>
+</head>
+
+<body onload="init()">
+
+    <header id="header-section" class="header-section">
+        <h2>Bestell App</h2> <img src="./images/icons/besteck-icon.png">
+    </header>
+    <main>
+        <!--Notes from the JS-Call last day-->
+        <!--git reset --hard  (macht die letzte Änderung rückgängig)-->
+        <!--5 Änderungen pro Tag auf Github comitten ist ideal-->
+        <!--npm - note package manager-->
+
+        <div class="left-productlist-container">
+            <div class="bigImage">
+                
+            </div>
+            <div class="pizzaDiv"><img class="pizzaicon" src="./images/icons/pizza_icon.png"></div>
+            <div class="restaurantname">
+                Solo per me
+                <img class="ratingImg" src="./images/img/rating-img.png">
+            </div>
+            
+
+            <div id="productlist-main-headline-shortcuts" class="productlist-main-headline-shortcuts">
+                
+            </div>
+            <div id="productlist-itself" class="productlist-itself">
+              
+
+            </div>
+            <button class="shoppingCartopenbutton" onclick="toggleshoppingCart()">Warenkorb</button>
+        </div>
+        
+        <div id="shoppingOverlay" class="shoppingOverlay display_none">
+            <div class="overlayheadline">Warenkorb</div>
+            <div class="breakline"><hr></div>
+            <div id="shoppingdetailsOverlay"></div>
+            <div id="priceOverlaydiv" class="priceOverlaydiv"></div>
+
+        </div>
+       
+        <div class="warenkorb">
+            <div id="youHaveOrderedrightNow" class="youHaveOrderedrightNow doNotShow"></div>
+            <div class="headline">
+                <h2><b>Warenkorb</b></h2><img onclick="clearshoppingCart()" class="clearshoppingCart"
+                    src="./images/icons/clear-shoppingCart-Icon.png">
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div id="shoppingCart" class="shoppingCart">
+            
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div id="calculation-container" class="calculation-container">
+                <div class="nethPriceContainer">
+                    <h5>Zwischensumme</h5>
+                    <div id="nethPrice"></div>
+                </div>
+                <div id="deliveryCostContainer" class="deliveryCostContainer">
+                    <h5>Lieferkosten</h5>
+                    <div id="deliveryPrice">
+                        <h5>3,99 €</h5>
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                </div>
+                <div id="totalPriceContainer" class="totalPriceContainer">
+                    <b>Gesamt</b>
+                    <div id="totalPrice"></div>
+                </div>
+                <div class="orderbutton">
+                    <button type="button" onclick="toggleOrdered()">Order-Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+        
+    <div class="footer">
+        <div>
+            <img src="./images/icons/besteck-icon.png">
+        </div>
+        <div class="links">
+            <h3>Impressum</h3>
+            <h3>Kontakt</h3>
+        </div>
+        
+    </div>
+</body>
+
+</html>
