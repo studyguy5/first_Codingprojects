@@ -28,7 +28,7 @@ let menu = [
 
   // Hauptgerichte - Pizza
   {
-    id: 1,
+    id: 0,
     category: "Pizza",
     name: "Pizza Margherita",
     description: "Tomatensauce, Mozzarella, frisches Basilikum",
@@ -36,7 +36,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 2,
+    id: 1,
     category: "Pizza",
     name: "Pizza Salami",
     description: "Tomatensauce, Mozzarella, italienische Salami",
@@ -44,7 +44,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 3,
+    id: 2,
     category: "Pizza",
     name: "Pizza Funghi",
     description: "Tomatensauce, Mozzarella, Champignons",
@@ -52,7 +52,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 4,
+    id: 3,
     category: "Pizza",
     name: "Pizza Diavola",
     description: "Tomatensauce, Mozzarella, scharfe Salami, Peperoni",
@@ -60,7 +60,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 5,
+    id: 4,
     category: "Pizza",
     name: "Pizza Quattro Formaggi",
     description: "Vier Käsesorten, Tomatensauce",
@@ -68,7 +68,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 6,
+    id: 5,
     category: "Pizza",
     name: "Pizza Prosciutto e Funghi",
     description: "Schinken, Champignons, Tomatensauce, Mozzarella",
@@ -78,7 +78,7 @@ let menu = [
 
  //Pasta
   {
-    id: 7,
+    id: 6,
     category: "Pasta",
     name: "Spaghetti Carbonara",
     description: "Mit Speck, Ei und Sahnesauce",
@@ -86,7 +86,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 8,
+    id: 7,
     category: "Pasta",
     name: "Penne all’Arrabbiata",
     description: "Scharfe Tomatensauce mit Knoblauch und Chili",
@@ -94,7 +94,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 9,
+    id: 8,
     category: "Pasta",
     name: "Lasagne al Forno",
     description: "Mit Hackfleischsauce und Bechamel überbacken",
@@ -104,7 +104,7 @@ let menu = [
 
  //beilage 
   {
-    id: 10,
+    id: 9,
     category: "Beilagen",
     name: "Bruschetta",
     description: "Geröstetes Brot mit Tomaten und Basilikum",
@@ -112,7 +112,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 11,
+    id: 10,
     category: "Beilagen",
     name: "Caprese",
     description: "Mozzarella, Tomaten, Basilikum",
@@ -120,7 +120,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 12,
+    id: 11,
     category: "Beilagen",
     name: "Insalata Mista",
     description: "Gemischter Salat mit Hausdressing",
@@ -130,7 +130,7 @@ let menu = [
 
  //drink 
   {
-    id: 13,
+    id: 12,
     category: "Getränke",
     name: "Coca-Cola (0,33l)",
     description: "",
@@ -138,7 +138,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 14,
+    id: 13,
     category: "Getränke",
     name: "Mineralwasser (0,5l)",
     description: "",
@@ -146,7 +146,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 15,
+    id: 14,
     category: "Getränke",
     name: "Rotwein (0,2l)",
     description: "Hauswein",
@@ -154,7 +154,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 16,
+    id: 15,
     category: "Getränke",
     name: "Espresso",
     description: "",
@@ -164,7 +164,7 @@ let menu = [
 
  //dessert 
   {
-    id: 17,
+    id: 16,
     category: "Dessert",
     name: "Tiramisu",
     description: "Hausgemacht mit Espresso und Mascarpone",
@@ -172,7 +172,7 @@ let menu = [
     amount: 0
   },
   {
-    id: 18,
+    id: 17,
     category: "Dessert",
     name: "Panna Cotta",
     description: "Mit Erdbeersauce",
