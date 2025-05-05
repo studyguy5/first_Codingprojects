@@ -12,6 +12,7 @@
     <script src="./storage.js"></script>
     <script src="./calculate.js"></script>
     <script src="responsiv-shoppingcart.js"></script>
+    <script src="youHaveOrdered.js"></script>
     <title>Bestell App</title>
 </head>
 
@@ -48,15 +49,20 @@
         </div>
         
         <div id="shoppingOverlay" class="shoppingOverlay display_none">
+            
             <div class="overlayheadline">Warenkorb</div>
             <div class="breakline"><hr></div>
             <div id="shoppingdetailsOverlay"></div>
             <div id="priceOverlaydiv" class="priceOverlaydiv"></div>
-
+            <button type="button" onclick="toggleOrderedOverlay()">Order-Now</button>
+            <div id="youHaveOrderedrightNowOverlay" class="youHaveOrderedrightNowOverlay doNotShow">
+                <img src="./images/img/delivery-scooter-animation.gif" alt="delivery-man">
+                <h3>You have testordered :-)</h3>
+            </div>
         </div>
        
         <div class="warenkorb">
-            <div id="youHaveOrderedrightNow" class="youHaveOrderedrightNow doNotShow"></div>
+            
             <div class="headline">
                 <h2><b>Warenkorb</b></h2><img onclick="clearshoppingCart()" class="clearshoppingCart"
                     src="./images/icons/clear-shoppingCart-Icon.png">
@@ -90,6 +96,10 @@
                 </div>
                 <div class="orderbutton">
                     <button type="button" onclick="toggleOrdered()">Order-Now</button>
+                </div>
+                <div id="youHaveOrderedrightNow" class="youHaveOrderedrightNow doNotShow">
+                    <img src="./images/img/delivery-scooter-animation.gif" alt="delivery-man">
+                    <h4>You have testordered :-)</h4>
                 </div>
             </div>
         </div>
