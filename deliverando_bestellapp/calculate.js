@@ -24,12 +24,12 @@ function nethPrice() {
 
 function renderNethPrice() {
     let nethprice = document.getElementById('nethPrice')
-    nethprice.innerHTML = `${nethPrice()} €`;
+    nethprice.innerHTML = `${nethPrice().toFixed(2)} €`;
 }
 
 function renderNethPriceInOverlay() {
     let nethPriceinTheOverlay = document.getElementById('nethPriceForTheOverlay')
-    nethPriceinTheOverlay.innerHTML = `${nethPrice()}€`;
+    nethPriceinTheOverlay.innerHTML = `${nethPrice().toFixed(2)}€`;
 }
 
 
