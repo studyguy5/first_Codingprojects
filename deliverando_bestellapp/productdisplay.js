@@ -35,12 +35,13 @@ function renderProductSource() {
             <h5><b>${filteredCategoryMenu[productIndex].price}€</b></h5>
             </div>
             <div class="productbox-rightside">
-            <img onclick="addToBasket(${filteredCategoryMenu[productIndex].id -1})" src="./images/icons/plus-zeichen.png">
+            <img onclick="addToBasket(${filteredCategoryMenu[productIndex].id})" src="./images/icons/plus-zeichen.png">
             </div>
             </div>`;
             
         }
     };
+    
     renderShoppingCart();
     renderPriceInOverlay();
 }
@@ -69,7 +70,7 @@ function renderShoppingCart() {
         <img onclick="deleteProduct(${cartIndex})" class="trashbox-symbol" src="./images/icons/trashbox-symbol.png">
         </div>
         </div>`
-
+console.log('arbeitet')
     };
     rendershoppingOverlay();
     renderNethPrice();
