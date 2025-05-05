@@ -26,6 +26,8 @@ body {
     height: 45px;
 }
 
+
+/* main-area ab hier*/
 main {
     display: flex;
     position: relative;
@@ -46,58 +48,58 @@ main {
 .pizzaicon {
     width: 100px;
     height: 100px;
-    padding:3px;
+    padding: 3px;
     background-color: rgb(241, 239, 239);
     border-radius: 58px;
 }
 
-.pizzaDiv{
-    display:flex;
+.pizzaDiv {
+    display: flex;
     justify-content: center;
-    position:relative;
-    bottom:75px;
-    
+    position: relative;
+    bottom: 75px;
+
 }
 
-.restaurantname{
-    display:flex;
+.restaurantname {
+    display: flex;
     flex-direction: column;
     padding: 0px 15px;
-    font-size:22px;
-    color:rgb(243, 200, 9);
+    font-size: 22px;
+    color: rgb(243, 200, 9);
     font-weight: bold;
-    position:relative;
-    bottom:80px;
+    position: relative;
+    bottom: 80px;
 }
 
-.ratingImg{
-    width:85px;
-    height:40px;
+.ratingImg {
+    width: 85px;
+    height: 40px;
 }
 
-
+/* product-area ab hier*/
 .productlist-main-headline-shortcuts {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    margin-top:-30px;
+    margin-top: -30px;
     height: 50px;
     background-color: rgba(116, 99, 45, 0.774);
     box-shadow: 2px 3px 5px 0.8px rgb(66, 72, 73);
     border-radius: 25px;
 }
 
-.productlist-main-headline-shortcuts:hover   {
+.productlist-main-headline-shortcuts:hover {
     background-color: rgba(187, 163, 86, 0.774);
-    
+
 }
 
 .productlist-main-headline-shortcuts a {
     cursor: pointer;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    
+
     font-size: 19px;
 }
 
@@ -106,8 +108,8 @@ main {
     color: rgb(107, 58, 49);
     text-decoration-thickness: 3px;
     transition: 0.3s ease-out;
-    display:block;
-    color:black;
+    display: block;
+    color: black;
 }
 
 .productlist-itself {
@@ -118,7 +120,7 @@ main {
 }
 
 .categorys {
-    display:flex;
+    display: flex;
     padding: 15px;
     margin: 15px;
     height: 80px;
@@ -127,17 +129,19 @@ main {
     box-shadow: 0px 2px 5px rgb(247, 247, 247);
 }
 
-.categorys h2{
-    display:flex;
+.categorys h2 {
+    display: flex;
     justify-content: start;
     align-items: center;
-    padding:0px 10px;
+    padding: 0px 10px;
     border: 2px solid white;
     border-radius: 10px;
-    background-color:rgb(182, 175, 175, 0.6);
-    cursor:default;
+    background-color: rgb(182, 175, 175, 0.6);
+    cursor: default;
 }
 
+
+/* background-images on headlines ab hier*/
 .Pizza.categorys {
     background-image: url(./images/img/category-pizza-img.jpg);
     background-position: bottom;
@@ -203,7 +207,7 @@ main {
     transition: 0.3s ease-in;
 }
 
-
+/* shopping-basket ab hier*/
 .warenkorb {
     min-width: 400px;
     height: 1350px;
@@ -229,32 +233,11 @@ main {
     display: none;
 }
 
-.shoppingOverlay {
-    position: fixed;
-    top: 85px;
-    left: 25px;
-    border-radius: 25px;
-    width: 88%;
-    max-width: 100%;
-    max-height: 100%;
-    height: 88%;
-    background-color: white;
-    border: 4px solid green;
-}
-
 .display_none {
     display: none;
 }
 
-.overlayheadline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    font-size: 25px;
-    color: green;
-    font-weight: bold;
-}
+
 
 .breakline hr {
     display: flex;
@@ -263,28 +246,33 @@ main {
 
 }
 
-.footer{
-    display:flex;
+/* footer-area ab hier*/
+.footer {
+    display: flex;
     justify-content: space-around;
     padding: 10px 15px;
-    height:150px;
-    border: 2px solid white;
+    height: 150px;
+
     background-color: rgb(202, 97, 26);
 }
 
-.footer img{
+.footer img {
     width: 85px;
     height: 85px;
 }
 
-.links{
-    display:flex;
-}
-.links h3{
-    margin: 25px 15px;
+.links {
+    display: flex;
 }
 
-@media(max-width: 800px) {
+.links h3 {
+    margin: 25px 15px;
+    cursor: pointer;
+}
+
+/*breakpoints ab hier*/
+
+@media(max-width: 830px) {
     .warenkorb {
         display: none;
     }
@@ -296,22 +284,61 @@ main {
         margin: 0 auto;
         position: sticky;
         bottom: 10px;
-        width: 380px;
+        width: 300px;
         height: 45px;
         background-color: orange;
         color: white;
         font-size: 18px;
         border-radius: 25px;
     }
-
-
-
-
-
 }
 
-@media(min-width:780px) {
+@media(min-width:830px) {
     .shoppingOverlay {
         display: none;
+    }
+}
+
+@media(max-width:920px) {
+    .categorys h2 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0px 10px;
+        font-size: 16px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: rgb(182, 175, 175, 0.6);
+        cursor: default;
+    }
+}
+
+@media(max-width:400px) {
+    .productlist-main-headline-shortcuts a {
+        font-size: 15px;
+    }
+
+    .productlist-main-headline-shortcuts {
+        padding: 2px;
+        width: 95%;
+        margin-top: -30px;
+    }
+
+    .categorys {
+        padding: 2px;
+    }
+
+    .links h3 {
+        margin: 25px 10px;
+
+    }
+
+    .bigImage {
+        margin-bottom: 15px;
+    }
+
+    .footer img {
+        width: 75px;
+        height: 75px;
     }
 }
