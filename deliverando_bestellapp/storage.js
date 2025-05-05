@@ -9,14 +9,17 @@ if (memory !== null) {
 }
 }
 
-function clearshoppingCart(cartIndex){
+function clearshoppingCart(){
     localStorage.clear();
-    shoppingCart.splice(cartIndex, 10)
+    shoppingCart = [];
     renderShoppingCart();
-}
-
-function toggleOrdered(){
-  let orderednow = document.getElementById('youHaveOrderedrightNow')
-  orderednow.classList.toggle('doNotShow')
-  clearshoppingCart();
+    renderNethPriceInOverlay();
+    renderTotalPriceforOverlay();
+    for (let productIndex = 0; productIndex < menu.length; productIndex++) {
+      menu[productIndex].amount = 0; 
+    }
+    
 };
+
+
+
