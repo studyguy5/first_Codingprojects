@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    background-color: rgb(151, 146, 100);
+
+
+}
+
+.header-section {
+    display: flex;
+    justify-content: start;
+    padding: 25px;
+    background-color: rgb(202, 97, 26);
+    color: white;
+}
+
+.header-section img {
+    width: 45px;
+    height: 45px;
+}
+
+
+main{
+    margin-top:50px;
+    margin-left:100px;
+    flex:1;
+}
+
+h2{
+    margin-left:15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 15px;
+    height: 150px;
+
+    background-color: rgb(202, 97, 26);
+}
+.footer img {
+    width: 85px;
+    height: 85px;
+}
+
+.links {
+    display: flex;
+}
+
+.links h3 {
+    margin: 25px 15px;
+    cursor: pointer;
+}
