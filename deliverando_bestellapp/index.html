@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Kochwelt-Projekt/assets/images/logo_small.png">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./shoppingCartDetails.css">
     <link rel="stylesheet" href="./shoppingCartOverlay.css">
@@ -17,7 +18,6 @@
 </head>
 
 <body onload="init()">
-
     <header id="header-section" class="header-section">
         <h2>Bestell App</h2> <img src="./images/icons/besteck-icon.png">
     </header>
@@ -29,29 +29,27 @@
 
         <div class="left-productlist-container">
             <div class="bigImage">
-                
+
             </div>
             <div class="pizzaDiv"><img class="pizzaicon" src="./images/icons/pizza_icon.png"></div>
             <div class="restaurantname">
                 Solo per me
                 <img class="ratingImg" src="./images/img/rating-img.png">
             </div>
-            
 
             <div id="productlist-main-headline-shortcuts" class="productlist-main-headline-shortcuts">
-                
             </div>
             <div id="productlist-itself" class="productlist-itself">
-              
-
             </div>
             <button class="shoppingCartopenbutton" onclick="toggleshoppingCart()">Warenkorb</button>
         </div>
-        
+
         <div id="shoppingOverlay" class="shoppingOverlay display_none">
-            
+
             <div class="overlayheadline">Warenkorb</div>
-            <div class="breakline"><hr></div>
+            <div class="breakline">
+                <hr>
+            </div>
             <div id="shoppingdetailsOverlay"></div>
             <div id="priceOverlaydiv" class="priceOverlaydiv"></div>
             <button type="button" onclick="toggleOrderedOverlay()">Order-Now</button>
@@ -60,9 +58,9 @@
                 <h3>You have testordered :-)</h3>
             </div>
         </div>
-       
+
         <div class="warenkorb">
-            
+
             <div class="headline">
                 <h2><b>Warenkorb</b></h2><img onclick="clearshoppingCart()" class="clearshoppingCart"
                     src="./images/icons/clear-shoppingCart-Icon.png">
@@ -71,7 +69,7 @@
                 <hr>
             </div>
             <div id="shoppingCart" class="shoppingCart">
-            
+
             </div>
             <div>
                 <hr>
@@ -104,7 +102,7 @@
             </div>
         </div>
     </main>
-        
+
     <div class="footer">
         <div>
             <img src="./images/icons/besteck-icon.png">
@@ -113,7 +111,7 @@
             <h3><a href="./impressum.html">Impressum</a> </h3>
             <h3><a href="./contact.html">Kontakt</a> </h3>
         </div>
-        
+
     </div>
 </body>
 

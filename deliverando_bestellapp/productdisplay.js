@@ -6,7 +6,6 @@ function init() {
 };
 
 
-
 function renderHeadline() {
     let categoryheadline = document.getElementById('productlist-main-headline-shortcuts')
     categoryheadline.innerHTML = "";
@@ -22,7 +21,7 @@ function renderProductSource() {
 
     for (let index = 0; index < categorys.length; index++) {
 
-        let currentCategory = categorys[index].name; 
+        let currentCategory = categorys[index].name;
         let filteredCategoryMenu = menu.filter(item => item.category === currentCategory);
         productlist.innerHTML += `<div class="${currentCategory} categorys" id="${index}"><h2>${currentCategory} > ${categorys[index].description}</h2></div>`
         for (let productIndex = 0; productIndex < filteredCategoryMenu.length; productIndex++) {
@@ -38,17 +37,13 @@ function renderProductSource() {
             <img onclick="addToBasket(${filteredCategoryMenu[productIndex].id})" src="./images/icons/plus-zeichen.png">
             </div>
             </div>`;
-            
+
         }
     };
-    
+
     renderShoppingCart();
     renderPriceInOverlay();
 }
-
-
-
-
 
 
 function renderShoppingCart() {
@@ -70,13 +65,11 @@ function renderShoppingCart() {
         <img onclick="deleteProduct(${cartIndex})" class="trashbox-symbol" src="./images/icons/trashbox-symbol.png">
         </div>
         </div>`
-console.log('arbeitet')
+        console.log('arbeitet')
     };
     rendershoppingOverlay();
     renderNethPrice();
     renderTotalPrice();
-    
-    
 };
 
 function addToBasket(productIndex) {

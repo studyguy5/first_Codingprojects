@@ -1,24 +1,24 @@
 
 let categorys = [
   {
-    name : "Pizza",
+    name: "Pizza",
     description: "Pizza's nach deinem Geschmack"
   },
   {
-    name : "Pasta",
+    name: "Pasta",
     description: "Pasta al dente und lecker"
   },
   {
-    name : "Beilagen",
+    name: "Beilagen",
     description: "Beilagen, die dazu passen"
   },
   {
-    name : "Getränke",
+    name: "Getränke",
     description: "alkoholische Getränke / Limonaden"
-    
+
   },
   {
-    name : "Dessert",
+    name: "Dessert",
     description: "Spezialitäten für Feinschmecker"
   },
 ];
@@ -76,7 +76,7 @@ let menu = [
     amount: 0
   },
 
- //Pasta
+  //Pasta
   {
     id: 6,
     category: "Pasta",
@@ -102,7 +102,7 @@ let menu = [
     amount: 0
   },
 
- //beilage 
+  //beilage 
   {
     id: 9,
     category: "Beilagen",
@@ -128,7 +128,7 @@ let menu = [
     amount: 0
   },
 
- //drink 
+  //drink 
   {
     id: 12,
     category: "Getränke",
@@ -162,7 +162,7 @@ let menu = [
     amount: 0
   },
 
- //dessert 
+  //dessert 
   {
     id: 16,
     category: "Dessert",

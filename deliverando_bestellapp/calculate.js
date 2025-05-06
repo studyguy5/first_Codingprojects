@@ -1,5 +1,4 @@
 
-
 function calculatePrice(productIndex) {
     sum = shoppingCart[productIndex].price;
     amount = shoppingCart[productIndex].amount;
@@ -31,8 +30,6 @@ function renderNethPriceInOverlay() {
     let nethPriceinTheOverlay = document.getElementById('nethPriceForTheOverlay')
     nethPriceinTheOverlay.innerHTML = `${nethPrice().toFixed(2)}€`;
 }
-
-
 
 
 function totalPrice() {

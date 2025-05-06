@@ -32,7 +32,6 @@ function rendershoppingOverlay() {
 
 
 
-
 function renderPriceInOverlay() {
     let priceOverlay = document.getElementById('priceOverlaydiv')
     priceOverlay.innerHTML = `
