@@ -10,8 +10,13 @@ function rendershoppingOverlay() {
     let overlayshopping = document.getElementById('shoppingdetailsOverlay')
     overlayshopping.innerHTML = "";
     for (let cartIndex = 0; cartIndex < shoppingCart.length; cartIndex++) {
-        overlayshopping.innerHTML += `
-        <div class="shoppingCartItem-NameOverlay">
+        overlayshopping.innerHTML += getOverlayvisible(cartIndex);
+    };
+};
+
+
+function getOverlayvisible(cartIndex){
+return `<div class="shoppingCartItem-NameOverlay">
         <h4>${shoppingCart[cartIndex].name}</h4>
         </div>
         <div class="shoppingCartItem-DetailsOverlay">
@@ -25,36 +30,23 @@ function rendershoppingOverlay() {
         <img onclick="deleteProduct(${cartIndex})" class="trashbox-symbol" src="./images/icons/trashbox-symbol.png">
         </div>
         </div>`
-
-    };
-
-};
+}
 
 
 
 function renderPriceInOverlay() {
     let priceOverlay = document.getElementById('priceOverlaydiv')
     priceOverlay.innerHTML = `
-            <div>
-                <hr>
-            </div>
-            <div id="calculation-container" class="calculation-container">
-                <div class="nethPriceContainerOverlay">
-                    <h5>Zwischensumme</h5>
-                    <div id="nethPriceForTheOverlay"> </div>
+            <div><hr></div>
+            <div id="calculation-container" class="calculation-containerOverlay">
+                <div class="nethPriceContainerOverlay"><h5>Zwischensumme</h5><div id="nethPriceForTheOverlay"> </div>
                 </div>
-                <div id="deliveryCostContainer" class="deliveryCostContainer">
-                    <h5>Lieferkosten</h5>
-                    <div>
-                        <h5>3,99€</h5>
-                    </div>
+                <div id="deliveryCostContainer" class="deliveryCostContainer"><h5>Lieferkosten</h5><div><h5>3,99€</h5></div>
                 </div>
-                <div>
-                    <hr>
+                <div><hr></div>
+                <div id="totalPriceContainerOverlay" class="totalPriceContainer"><b>Gesamt</b><div id="totalpriceOverlay"></div>
                 </div>
-                <div id="totalPriceContainerOverlay" class="totalPriceContainer">
-                    <b>Gesamt</b>
-                    <div id="totalpriceOverlay"></div>
-                </div>
+                <div class="overlayOrderbutton"><button type="button" onclick="toggleOrderedOverlay()">Order-Now</button></div>
             </div>`
-}
+};
+

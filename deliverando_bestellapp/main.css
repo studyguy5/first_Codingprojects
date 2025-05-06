@@ -75,7 +75,7 @@ main {
 }
 
 /* product-area ab hier*/
-.productlist-main-headline-shortcuts {
+.productlist-main-headline-shortcuts  {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -85,6 +85,7 @@ main {
     background-color: rgba(121, 100, 33, 0.774);
     box-shadow: 2px 3px 5px 0.8px rgb(66, 72, 73);
     border-radius: 25px;
+    text-decoration: none;
 }
 
 .productlist-main-headline-shortcuts:hover {
@@ -92,20 +93,20 @@ main {
 
 }
 
-.productlist-main-headline-shortcuts a {
+.productlist-main-headline-shortcuts div {
     cursor: pointer;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 19px;
 }
 
-.productlist-main-headline-shortcuts a:hover {
-    text-decoration: underline;
+.productlist-main-headline-shortcuts div:hover {
+    text-decoration: none;
     color: rgb(107, 58, 49);
-    text-decoration-thickness: 3px;
+    font-weight: bold;
     transition: 0.3s ease-out;
-    display: block;
-    color: black;
+    
+    
 }
 
 .productlist-itself {
@@ -201,11 +202,13 @@ main {
 /* shopping-basket ab hier*/
 .warenkorb {
     min-width: 400px;
-    height: 1350px;
+    height: 1375px;
     position: sticky;
     top: 0;
+    overflow:auto;
     background-color: rgb(185, 180, 180);
     overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .headline {
@@ -241,7 +244,7 @@ main {
     display: flex;
     justify-content: space-around;
     padding: 10px 15px;
-    height: 150px;
+    height: 80px;
     background-color: rgb(230, 98, 10);
 }
 
@@ -272,7 +275,8 @@ main {
         align-items: center;
         margin: 0 auto;
         position: sticky;
-        bottom: 10px;
+        bottom:10px;
+        
         width: 300px;
         height: 45px;
         background-color: orange;

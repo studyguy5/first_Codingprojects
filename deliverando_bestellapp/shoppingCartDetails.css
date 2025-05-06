@@ -1,5 +1,20 @@
 .calculation-container {
-    padding: 10px;
+    
+    padding-bottom:10px;
+    position:sticky;
+    bottom:5px;
+    background-color:rgb(218, 106, 62, 1);
+    border-radius: 15px;
+}
+
+
+
+.calculation-containerOverlay {
+    padding-bottom:10px;
+    position:sticky;
+    bottom:5px;
+    background-color:rgb(218, 106, 62, 1);
+    border-radius: 15px;
 }
 
 hr {
@@ -9,6 +24,7 @@ hr {
 .shoppingCartItem-Details {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .shoppingCartItem-Amount {
@@ -69,7 +85,7 @@ hr {
     position: absolute;
     top: 50px;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 15px;
     width: 370px;
     height: 480px;
     background-color: rgb(161, 146, 146);
@@ -115,6 +131,8 @@ hr {
     height: 50px;
     display: flex;
     justify-content: center;
+    position:sticky;
+    bottom:10px;
     margin-top: 15px;
 }
 
