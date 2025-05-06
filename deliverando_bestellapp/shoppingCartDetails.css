@@ -1,8 +1,7 @@
 .calculation-container {
-    
     padding-bottom:10px;
     position:sticky;
-    bottom:5px;
+    bottom:30px;
     background-color:rgb(218, 106, 62, 1);
     border-radius: 15px;
 }
