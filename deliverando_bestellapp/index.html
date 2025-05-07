@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/Kochwelt-Projekt/assets/images/logo_small.png">
+    <link rel="icon" href="./images/icons/favicon.png">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./shoppingCartDetails.css">
     <link rel="stylesheet" href="./shoppingCartOverlay.css">
@@ -22,11 +22,7 @@
         <h2>Bestell App</h2> <img src="./images/icons/besteck-icon.png">
     </header>
     <main>
-        <!--Notes from the JS-Call last day-->
-        <!--git reset --hard  (macht die letzte Änderung rückgängig)-->
-        <!--5 Änderungen pro Tag auf Github comitten ist ideal-->
-        <!--npm - note package manager-->
-
+        
         <div class="left-productlist-container">
             <div class="bigImage">
 
@@ -41,7 +37,7 @@
             </div>
             <div id="productlist-itself" class="productlist-itself">
             </div>
-            <button class="shoppingCartopenbutton" onclick="toggleshoppingCart()">Warenkorb</button>
+            <button id="shoppingCartopenbutton" class="shoppingCartopenbutton" onclick="toggleshoppingCart()"></button>
         </div>
 
         <div id="shoppingOverlay" class="shoppingOverlay display_none">

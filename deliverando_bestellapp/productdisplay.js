@@ -38,7 +38,6 @@ function getProducts(productIndex, filteredCategoryMenu) {
             <div class="productbox-leftside">
             <h3>${filteredCategoryMenu[productIndex].name}</h3>
             <h5>${filteredCategoryMenu[productIndex].description}</h5>
-            <br>
             <h5><b>${filteredCategoryMenu[productIndex].price}€</b></h5>
             </div>
             <div class="productbox-rightside">
@@ -52,7 +51,6 @@ function renderShoppingCart() {
     cart.innerHTML = "";
     for (let cartIndex = 0; cartIndex < shoppingCart.length; cartIndex++) {
         cart.innerHTML += getshoppedProducts(cartIndex)
-        console.log('arbeitet')
     };
     rendershoppingOverlay();
     renderNethPrice();
@@ -118,3 +116,18 @@ function deleteProduct(productIndex) {
     renderNethPriceInOverlay();
     renderTotalPriceforOverlay();
 }
+
+
+window.addEventListener('scroll', () =>{
+    const header = document.querySelector('.header-section');
+    const warenkorb = document.querySelector('.warenkorb');
+    const rect = header.getBoundingClientRect();
+
+    if (rect.bottom <= 0){
+        warenkorb.style.height = '100vh';
+    }else{
+        warenkorb.style.top = '0';
+        warenkorb.style.height = 'calc(100vh - 137px)';
+    }
+
+});

@@ -80,7 +80,6 @@ main {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    margin-top: -30px;
     height: 50px;
     background-color: rgba(121, 100, 33, 0.774);
     box-shadow: 2px 3px 5px 0.8px rgb(66, 72, 73);
@@ -191,6 +190,7 @@ main {
 .productbox-rightside img {
     width: 25px;
     height: 25px;
+    cursor:pointer;
 }
 
 .productbox-rightside img:hover {
@@ -202,13 +202,14 @@ main {
 /* shopping-basket ab hier*/
 .warenkorb {
     min-width: 400px;
-    height: 1375px;
-    position: sticky;
-    top: 0;
-    overflow:auto;
-    background-color: rgb(185, 180, 180);
+    height:calc(100vh - 137px);
     overflow-y: scroll;
-    scrollbar-width: none;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(185, 180, 180);
+    border-radius: 10px;
+    scrollbar-width: 1px;
+    transition: all 0.3s ease-out;
 }
 
 .headline {
@@ -220,6 +221,7 @@ main {
 .shoppingCart {
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 
@@ -263,35 +265,6 @@ main {
 }
 
 /*breakpoints ab hier*/
-
-@media(max-width: 830px) {
-    .warenkorb {
-        display: none;
-    }
-
-    .shoppingCartopenbutton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        position: sticky;
-        bottom:10px;
-        
-        width: 300px;
-        height: 45px;
-        background-color: orange;
-        color: white;
-        font-size: 18px;
-        border-radius: 25px;
-    }
-}
-
-@media(min-width:830px) {
-    .shoppingOverlay {
-        display: none;
-    }
-}
-
 @media(max-width:920px) {
     .categorys h2 {
         display: flex;
@@ -305,6 +278,35 @@ main {
         cursor: default;
     }
 }
+
+@media(max-width: 830px) {
+    .warenkorb {
+        display: none;
+    }
+
+    .shoppingCartopenbutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        position: sticky;
+        bottom:10px;
+        width: 300px;
+        height: 65px;
+        background-color: orange;
+        color: white;
+        font-size: 18px;
+        border-radius: 25px;
+    }
+}
+
+@media(min-width:830px) {
+    .shoppingOverlay {
+        display: none;
+    }
+}
+
+
 
 @media(max-width:400px) {
     .productlist-main-headline-shortcuts a {

@@ -1,19 +1,17 @@
 .calculation-container {
     padding-bottom:10px;
     position:sticky;
-    bottom:30px;
+    bottom:0px;
     background-color:rgb(218, 106, 62, 1);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 
 
 .calculation-containerOverlay {
     padding-bottom:10px;
-    position:sticky;
-    bottom:5px;
     background-color:rgb(218, 106, 62, 1);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 hr {
@@ -36,11 +34,13 @@ hr {
 .amount-minus-symbol {
     width: 20px;
     height: 20px;
+    cursor:pointer;
 }
 
 .amount-plus-symbol {
     width: 20px;
     height: 20px;
+    cursor:pointer;
 }
 
 .amount-plus-symbol:hover,
@@ -59,6 +59,7 @@ hr {
 .trashbox-symbol {
     width: 20px;
     height: 20px;
+    cursor:pointer;
 }
 
 .trashbox-symbol:hover {

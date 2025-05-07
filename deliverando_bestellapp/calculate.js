@@ -40,12 +40,13 @@ function totalPrice() {
 
 function renderTotalPrice() {
     let total = document.getElementById('totalPrice')
+    let sideinfo = document.getElementById('shoppingCartopenbutton')
+    sideinfo.innerHTML=`<b>Warenkorb Summe ${totalPrice().toFixed(2)}</b> €`
     total.innerHTML = `<b>${totalPrice().toFixed(2)}</b> €`
-
 }
 
 function renderTotalPriceforOverlay() {
     let totalOverlay = document.getElementById('totalpriceOverlay')
-    totalOverlay.innerHTML = `<b>${totalPrice().toFixed(2)}</b> €`
+    totalOverlay.innerHTML = `<b> ${totalPrice().toFixed(2)}</b> €`
 }
 

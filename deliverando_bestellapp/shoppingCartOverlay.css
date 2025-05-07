@@ -19,7 +19,7 @@
 
 .priceOverlaydiv{
     position:sticky;
-    bottom:10px;
+    bottom:-15px;
 }
 
 .priceOverlaydiv hr {
