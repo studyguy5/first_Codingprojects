@@ -44,9 +44,9 @@ function renderQuestions() {            //if-statement to check if the last ques
 
 
 function showEndscreen(){
-    document.getElementById('endScreenBody').style = "";
-        document.getElementById('questionBody').style = "display:none";
-        document.getElementById('quizImage').src = "./img/cup.png";
+    document.getElementById('endScreenBody').style = "";        //we delete display:none; on the endscreen to show it
+        document.getElementById('questionBody').style = "display:none"; // we put display:none; at the questionBody to hide it
+        document.getElementById('quizImage').src = "./img/cup.png";     // and of course we show the winner image at the end
 }
 
 
